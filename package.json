@@ -1,7 +1,14 @@
 {
 	"name": "area-calculator-revisited",
-	"private": true,
+	"displayName": "Area Calculator Revisited",
+	"description": "A remake of Area Calculator built with Vite, React, and TypeScript!",
 	"version": "1.0.0",
+	"author": {
+		"name": "Hilder Gill",
+		"email": "hildergill@gmail.com",
+		"url": "https://www.github.com/hildergill"
+	},
+	"repository": "https://www.github.com/hildergill/area-calculator-revisited",
 	"scripts": {
 		"format": "npx prettier --write .",
 		"dev": "vite",
