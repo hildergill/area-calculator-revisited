@@ -9,6 +9,7 @@
 		"url": "https://www.github.com/hildergill"
 	},
 	"repository": "https://www.github.com/hildergill/area-calculator-revisited",
+	"license": "MIT",
 	"scripts": {
 		"format": "npx prettier --write .",
 		"dev": "vite",
