@@ -19,8 +19,8 @@
 
 	display: grid;
 	grid-template-areas:
-		"headerComponent headerComponent headerComponent"
+		"header header header"
 		"shapeSelector calculatorForm resultsList";
 	grid-template-columns: $side-panel-width auto $side-panel-width;
-	grid-template-rows: 8rem auto;
+	grid-template-rows: max-content auto;
 }
