@@ -4,11 +4,13 @@ import { initReactI18next } from "react-i18next";
 
 import CommonEn from "../locales/en/common.json";
 import HeaderComponentEn from "../locales/en/headercomponent.json";
+import ShapesEn from "../locales/en/shapes.json";
 
 export const resources: Resource = {
 	en: {
 		common: CommonEn,
-		headerComponent: HeaderComponentEn
+		headerComponent: HeaderComponentEn,
+		shapes: ShapesEn
 	}
 };
 

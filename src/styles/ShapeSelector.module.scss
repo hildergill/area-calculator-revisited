@@ -1,0 +1,31 @@
+@use "./constants.scss";
+
+.shapeSelector {
+	display: flex;
+	flex-direction: column;
+	background-color: map-get(constants.$colors-background, "dark");
+	border-top: 2px solid map-get(constants.$colors-background, "darker");
+	border-right: 2px solid map-get(constants.$colors-background, "darker");
+
+	.shapeSelectorButtonBase {
+		padding: 0.5rem;
+		background: none;
+		border: none;
+		border-bottom: 2px solid map-get(constants.$colors-background, "darker");
+		cursor: pointer;
+
+		p {
+			text-align: left;
+			font-size: 1rem;
+			color: constants.$color-secondary-text;
+		}
+	}
+
+	.shapeSelectorButtonActive {
+		background-color: map-get(constants.$colors-background, "light");
+
+		p {
+			color: constants.$color-primary-text;
+		}
+	}
+}
