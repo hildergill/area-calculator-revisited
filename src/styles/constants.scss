@@ -1,4 +1,8 @@
 $background-colors: (
-	base: hsl(0, 0%, 96%),
-	dark: hsl(0, 0%, 88%)
+	light: hsl(0, 0%, 96%),
+	base: hsl(0, 0%, 88%),
+	dark: hsl(0, 0%, 80%)
 );
+
+$color-primary-text: hsl(0, 0%, 72%);
+$color-secondary-text: hsl(0, 0%, 64%);

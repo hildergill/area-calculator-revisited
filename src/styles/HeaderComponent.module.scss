@@ -1,0 +1,10 @@
+@use "./constants.scss";
+
+.headerComponent {
+	grid-area: header;
+	padding: 0.5rem;
+
+	h1 {
+		color: constants.$color-secondary-text;
+	}
+}
