@@ -1,7 +1,8 @@
 $colors-background: (
 	light: hsl(0, 0%, 96%),
 	base: hsl(0, 0%, 88%),
-	dark: hsl(0, 0%, 80%)
+	dark: hsl(0, 0%, 80%),
+	darker: hsl(0, 0%, 72%)
 );
 
 $color-primary-text: hsl(0, 0%, 48%);
@@ -9,3 +10,10 @@ $color-secondary-text: hsl(0, 0%, 64%);
 
 $dimens-border-size: 1px;
 $dimens-outline-size: 2px;
+
+$shadows: (
+	top: 0px -2px 1px hsl(0, 0%, 0%, 20%),
+	bottom: 0px 2px 1px hsl(0, 0%, 0%, 20%),
+	left: -2px 0px 1px hsl(0, 0%, 0%, 20%),
+	right: 2px 0px 1px hsl(0, 0%, 0%, 20%)
+);
