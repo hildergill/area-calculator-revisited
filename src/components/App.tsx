@@ -7,12 +7,12 @@ const App = () => {
 
 	const onSelectedActiveIndex = (activeIndex: number) => setActiveShape(activeIndex);
 
-	const shapeSelectorRef: RefObject<HTMLDivElement> = createRef();
+	const shapeSelectorRef: RefObject<HTMLButtonElement> = createRef();
 
 	return (
 		<>
 			<HeaderComponent />
-			<ShapeSelector activeIndex={activeShape} onSelected={onSelectedActiveIndex} />
+			<ShapeSelector shapeSelectorRef={shapeSelectorRef} activeIndex={activeShape} onSelected={onSelectedActiveIndex} />
 
 			{/** @TODO Add something here later */}
 			{/** @TODO Add something here later */}
