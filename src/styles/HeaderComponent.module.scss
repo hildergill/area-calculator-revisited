@@ -3,8 +3,35 @@
 .headerComponent {
 	grid-area: header;
 	padding: 0.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	* {
+		color: constants.$color-secondary-text;
+	}
 
 	h1 {
-		color: constants.$color-secondary-text;
+		margin: auto 0;
+	}
+
+	.repoLink {
+		align-self: flex-end;
+		margin-left: auto;
+		text-decoration: none;
+		padding: 0.5rem 1rem;
+		border-radius: 100vh;
+		background-color: map-get(constants.$colors-background, "dark");
+
+		* {
+			display: inline;
+			vertical-align: middle;
+			color: constants.$color-primary-text;
+		}
+
+		p {
+			margin-left: 0.5rem;
+			font-weight: bold;
+		}
 	}
 }
