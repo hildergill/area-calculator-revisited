@@ -12,7 +12,7 @@
 		color: constants.$color-secondary-text;
 	}
 
-	.repoLink {
+	.headerButton {
 		align-self: flex-end;
 		margin-left: auto;
 		text-decoration: none;
@@ -27,8 +27,11 @@
 			color: constants.$color-primary-text;
 		}
 
+		svg {
+			margin-right: 0.5rem;
+		}
+
 		p {
-			margin-left: 0.5rem;
 			font-weight: bold;
 		}
 
