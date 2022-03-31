@@ -1,5 +1,8 @@
 {
 	"circleRadius": {
 		"name": "Circle (Radius)"
+	},
+	"circleDiameter": {
+		"name": "Circle (Diameter)"
 	}
 }
