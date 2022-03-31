@@ -7,12 +7,9 @@
 	flex-direction: row;
 	justify-content: flex-start;
 
-	* {
-		color: constants.$color-secondary-text;
-	}
-
 	h1 {
 		margin: auto 0;
+		color: constants.$color-secondary-text;
 	}
 
 	.repoLink {
