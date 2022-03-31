@@ -6,16 +6,14 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	gap: 1rem;
 
 	h1 {
 		margin: auto 0;
 		color: constants.$color-secondary-text;
 	}
 
-	.headerButton {
-		align-self: flex-end;
-		margin-left: auto;
-		text-decoration: none;
+	.headerButtonBase {
 		padding: 0.5rem 1rem;
 		border-radius: 100vh;
 		border: constants.$dimens-border-size solid transparent;
@@ -33,11 +31,29 @@
 
 		p {
 			font-weight: bold;
+			font-size: 1rem;
 		}
 
-		&:hover,
-		&:focus {
+		&:hover {
 			border: constants.$dimens-border-size solid constants.$color-secondary-text;
+		}
+
+		&:focus {
+			outline: constants.$dimens-outline-size solid blue;
+		}
+	}
+
+	.repoLink {
+		align-self: flex-end;
+		margin-left: auto;
+		text-decoration: none;
+	}
+
+	.skipToShapeSelectorButton {
+		opacity: 0;
+
+		&:focus {
+			opacity: 1;
 		}
 	}
 }
