@@ -4,19 +4,32 @@ import { repository } from "../../package.json";
 
 import HeaderComponentStyles from "../styles/HeaderComponent.module.scss";
 
-const HeaderComponent = () => {
+type OnSkipComponentProps = {
+	(): void;
+};
+
+type HeaderComponentProps = {
+	onSkipHeaderComponent: OnSkipComponentProps;
+};
+
+const HeaderComponent = (props: HeaderComponentProps) => {
 	const { t } = useTranslation();
 
-	const { headerComponent, headerButtonBase, repoLink, skipToShapeSelectorButton } = HeaderComponentStyles;
+	const { headerComponent, headerButtonBase, repoLink, skipToShapeSelectorButton } = HeaderComponentStyles,
+		{ onSkipHeaderComponent }: HeaderComponentProps = props;
 
 	const repoLinkClassName: string = [headerButtonBase, repoLink].join(" "),
 		skipButton: string = [headerButtonBase, skipToShapeSelectorButton].join(" ");
+
+	const onSkipHandler = (): void => {
+		if (onSkipHeaderComponent) onSkipHeaderComponent();
+	};
 
 	return (
 		<header className={headerComponent}>
 			<h1>{t("common:appName")}</h1>
 
-			<button className={skipButton} tabIndex={0}>
+			<button className={skipButton} tabIndex={0} onClick={onSkipHandler}>
 				<p>{t("headerComponent:skipToShapeSelector")}</p>
 			</button>
 
