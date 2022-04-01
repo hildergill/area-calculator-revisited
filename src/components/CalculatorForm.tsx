@@ -15,7 +15,7 @@ const CalculatorForm = (props: CalculatorFormProps) => {
 	return (
 		<form>
 			{getCalculatorForm(t)}
-			<input type="submit" value="Calculate" />
+			<input type="submit" value={String(t("calculatorForm:calculateButton"))} />
 		</form>
 	);
 };
