@@ -1,3 +1,5 @@
+import NumberInputStyles from "../styles/NumberInput.module.scss";
+
 type NumberInputProps = {
 	name: string;
 };
@@ -5,7 +7,9 @@ type NumberInputProps = {
 const NumberInput = (props: NumberInputProps) => {
 	const { name }: NumberInputProps = props;
 
-	return <input type="number" name={name} id={name} min={1} step={0.01} value={1} required />;
+	const { numberInput } = NumberInputStyles;
+
+	return <input className={numberInput} type="number" name={name} id={name} min={1} step={0.01} value={1} required />;
 };
 
 export default NumberInput;
