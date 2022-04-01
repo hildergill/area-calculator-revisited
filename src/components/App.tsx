@@ -1,4 +1,5 @@
 import { createRef, RefObject, useState } from "react";
+import CalculatorForm from "./CalculatorForm";
 import HeaderComponent from "./HeaderComponent";
 import ShapeSelector from "./ShapeSelector";
 
@@ -17,6 +18,7 @@ const App = () => {
 		<>
 			<HeaderComponent onSkipHeaderComponent={onSkipHeaderComponent} />
 			<ShapeSelector shapeSelectorRef={shapeSelectorRef} activeIndex={activeShape} onSelected={onSelectedActiveIndex} />
+			<CalculatorForm activeIndex={activeShape} />
 
 			{/** @TODO Add something here later */}
 			{/** @TODO Add something here later */}

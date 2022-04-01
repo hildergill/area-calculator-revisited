@@ -1,8 +1,14 @@
 {
 	"circleRadius": {
-		"name": "Circle (Radius)"
+		"name": "Circle (Radius)",
+		"inputs": {
+			"radius": "Radius"
+		}
 	},
 	"circleDiameter": {
-		"name": "Circle (Diameter)"
+		"name": "Circle (Diameter)",
+		"inputs": {
+			"diameter": "Diameter"
+		}
 	}
 }
