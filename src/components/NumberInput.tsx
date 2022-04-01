@@ -9,7 +9,7 @@ const NumberInput = (props: NumberInputProps) => {
 
 	const { numberInput } = NumberInputStyles;
 
-	return <input className={numberInput} type="number" name={name} id={name} min={1} step={0.01} value={1} required />;
+	return <input className={numberInput} type="number" name={name} id={name} min={1} step={0.01} defaultValue={1} required />;
 };
 
 export default NumberInput;
