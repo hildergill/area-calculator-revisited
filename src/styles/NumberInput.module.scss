@@ -1,0 +1,9 @@
+@use "./constants.scss";
+
+.numberInput {
+	background-color: map-get(constants.$colors-background, "dark");
+	border: none;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-family: "Open Sans", sans-serif;
+}

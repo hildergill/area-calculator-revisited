@@ -5,12 +5,14 @@ import { initReactI18next } from "react-i18next";
 import CommonEn from "../locales/en/common.json";
 import HeaderComponentEn from "../locales/en/headercomponent.json";
 import ShapesEn from "../locales/en/shapes.json";
+import CalculatorFormEn from "../locales/en/calculatorform.json";
 
 export const resources: Resource = {
 	en: {
 		common: CommonEn,
 		headerComponent: HeaderComponentEn,
-		shapes: ShapesEn
+		shapes: ShapesEn,
+		calculatorForm: CalculatorFormEn
 	}
 };
 

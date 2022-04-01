@@ -1,0 +1,25 @@
+.calculatorForm {
+	display: grid;
+	grid-template-columns: max-content minmax(auto, 30vw);
+	grid-auto-rows: max-content;
+	align-content: center;
+	justify-content: center;
+	gap: 0.5rem;
+
+	* {
+		font-size: 1rem;
+	}
+
+	label {
+		grid-column: 1/2;
+		margin: auto 0;
+	}
+
+	input {
+		grid-column: 2/3;
+	}
+
+	input[type="submit"] {
+		justify-self: flex-end;
+	}
+}
