@@ -14,11 +14,15 @@ const App = () => {
 		shapeSelectorRef.current?.focus();
 	};
 
+	const onSubmitCalculatorForm = (inputs: any) => {
+		// TODO Add something here later
+	};
+
 	return (
 		<>
 			<HeaderComponent onSkipHeaderComponent={onSkipHeaderComponent} />
 			<ShapeSelector shapeSelectorRef={shapeSelectorRef} activeIndex={activeShape} onSelected={onSelectedActiveIndex} />
-			<CalculatorForm activeIndex={activeShape} />
+			<CalculatorForm activeIndex={activeShape} onSubmit={onSubmitCalculatorForm} />
 
 			{/** @TODO Add something here later */}
 			{/** @TODO Add something here later */}
