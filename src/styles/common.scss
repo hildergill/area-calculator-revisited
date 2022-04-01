@@ -25,4 +25,8 @@
 		"shapeSelector calculatorForm resultsList";
 	grid-template-columns: $side-panel-width auto $side-panel-width;
 	grid-template-rows: max-content auto;
+
+	* {
+		color: constants.$color-primary-text;
+	}
 }
