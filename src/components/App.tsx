@@ -1,5 +1,4 @@
 import { createRef, RefObject, useState } from "react";
-import ShapeCollection from "../shapecollection";
 import CalculatorForm from "./CalculatorForm";
 import HeaderComponent from "./HeaderComponent";
 import ShapeSelector from "./ShapeSelector";
@@ -15,9 +14,8 @@ const App = () => {
 		shapeSelectorRef.current?.focus();
 	};
 
-	const onSubmitCalculatorForm = (inputs: any) => {
-		const { calculateArea } = Object.values(ShapeCollection)[activeShape],
-			shapeArea: number = calculateArea(inputs);
+	const onSubmitCalculatorForm = (area: number) => {
+		console.log(area);
 
 		// TODO Add something here later
 	};

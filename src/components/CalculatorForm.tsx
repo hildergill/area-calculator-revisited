@@ -6,7 +6,7 @@ import CalculatorFormStyle from "../styles/CalculatorForm.module.scss";
 import GenericButtonStyles from "../styles/GenericButton.module.scss";
 
 type OnSubmitCalculatorForm = {
-	(inputs: any): void;
+	(area: number): void;
 };
 
 type CalculatorFormProps = {
@@ -21,7 +21,7 @@ const CalculatorForm = (props: CalculatorFormProps) => {
 
 	const { t } = useTranslation();
 
-	const { getCalculatorForm } = Object.values(ShapeCollection)[activeIndex];
+	const { getCalculatorForm, calculateArea } = Object.values(ShapeCollection)[activeIndex];
 
 	const { calculatorForm } = CalculatorFormStyle,
 		{ genericButton } = GenericButtonStyles;
@@ -34,8 +34,10 @@ const CalculatorForm = (props: CalculatorFormProps) => {
 
 		r?.forEach(({ value, name }: any) => inputObjectString.push(`"${name}":${value}`));
 
-		const objectToParse: string = "{" + inputObjectString.join(",") + "}";
-		if (onSubmit) onSubmit(JSON.parse(objectToParse));
+		const objectToParse: string = "{" + inputObjectString.join(",") + "}",
+			inputObject = JSON.parse(objectToParse);
+
+		if (onSubmit) onSubmit(calculateArea(inputObject));
 	};
 
 	return (
