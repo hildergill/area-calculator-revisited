@@ -1,4 +1,5 @@
 import { TFunction } from "react-i18next";
+import NumberInput from "./components/NumberInput";
 
 type ShapeType<Params> = {
 	getShapeName(t: TFunction): string;
@@ -18,7 +19,7 @@ const ShapeCollection: ShapeCollectionType = {
 		getCalculatorForm: (t: TFunction) => (
 			<>
 				<label htmlFor="radius">{t("shapes:circleRadius.inputs.radius")}</label>
-				<input type="number" name="radius" id="radius" />
+				<NumberInput name="radius" />
 			</>
 		)
 	},
@@ -28,7 +29,7 @@ const ShapeCollection: ShapeCollectionType = {
 		getCalculatorForm: (t: TFunction) => (
 			<>
 				<label htmlFor="diameter">{t("shapes:circleDiameter.inputs.diameter")}</label>
-				<input type="number" name="diameter" id="diameter" />
+				<NumberInput name="diameter" />
 			</>
 		)
 	}

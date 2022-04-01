@@ -6,6 +6,10 @@
 	justify-content: center;
 	gap: 0.5rem;
 
+	* {
+		font-size: 1rem;
+	}
+
 	label {
 		grid-column: 1/2;
 		margin: auto 0;
