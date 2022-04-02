@@ -4,7 +4,13 @@
 	padding: 0.5rem;
 	background: none;
 	border: none;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
 	cursor: pointer;
+
+	&:first-child {
+		border-top: none;
+	}
 
 	p {
 		text-align: left;
@@ -17,10 +23,6 @@
 	background-color: map-get(constants.$colors-background, "light");
 	border-top: 2px solid map-get(constants.$colors-background, "darker");
 	border-bottom: 2px solid map-get(constants.$colors-background, "darker");
-
-	&:first-child {
-		border-top: none;
-	}
 
 	p {
 		color: constants.$color-primary-text;
