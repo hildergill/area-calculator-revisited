@@ -1,10 +1,13 @@
 import { createRef, RefObject, useState } from "react";
 import CalculatorForm from "./CalculatorForm";
 import HeaderComponent from "./HeaderComponent";
+import ResultBox from "./ResultBox";
+import ResultsList from "./ResultsList";
 import ShapeSelector from "./ShapeSelector";
 
 const App = () => {
-	const [activeShape, setActiveShape] = useState(0);
+	const [activeShape, setActiveShape] = useState<number>(0);
+	const [resultBoxList, setResultBoxList] = useState<JSX.Element[]>([]);
 
 	const shapeSelectorRef: RefObject<HTMLButtonElement> = createRef();
 
@@ -15,9 +18,9 @@ const App = () => {
 	};
 
 	const onSubmitCalculatorForm = (area: number) => {
-		console.log(area);
+		const tempResultBox: JSX.Element = <ResultBox key={resultBoxList.length} area={area} />;
 
-		// TODO Add something here later
+		setResultBoxList([...resultBoxList, tempResultBox]);
 	};
 
 	return (
@@ -25,10 +28,7 @@ const App = () => {
 			<HeaderComponent onSkipHeaderComponent={onSkipHeaderComponent} />
 			<ShapeSelector shapeSelectorRef={shapeSelectorRef} activeIndex={activeShape} onSelected={onSelectedActiveIndex} />
 			<CalculatorForm activeIndex={activeShape} onSubmit={onSubmitCalculatorForm} />
-
-			{/** @TODO Add something here later */}
-			{/** @TODO Add something here later */}
-			{/** @TODO Add something here later */}
+			<ResultsList resultsBoxList={resultBoxList} />
 		</>
 	);
 };

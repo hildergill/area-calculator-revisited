@@ -1,11 +1,11 @@
 type ResultsListProps = {
-	resultsBox: JSX.Element[];
+	resultsBoxList: JSX.Element[];
 };
 
 const ResultsList = (props: ResultsListProps) => {
-	const { resultsBox }: ResultsListProps = props;
+	const { resultsBoxList }: ResultsListProps = props;
 
-	return <output>{resultsBox}</output>;
+	return <output>{resultsBoxList}</output>;
 };
 
 export default ResultsList;
