@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import ShapeCollection from "../shapecollection";
 
 import ShapeSelectorStyles from "../styles/ShapeSelector.module.scss";
+import SidePanelStyles from "../styles/generic/SidePanel.module.scss";
 
 type OnSelectedShapeSelector = {
 	(index: number): void;
@@ -17,11 +18,13 @@ type ShapeSelectorProps = {
 const ShapeSelector = (props: ShapeSelectorProps) => {
 	const { t } = useTranslation();
 
-	const { shapeSelector, shapeSelectorButtonBase, shapeSelectorButtonActive } = ShapeSelectorStyles,
-		{ activeIndex, onSelected, shapeSelectorRef }: ShapeSelectorProps = props;
+	const { activeIndex, onSelected, shapeSelectorRef }: ShapeSelectorProps = props;
 
 	const shapeSelectorButtons: JSX.Element[] = Object.values(ShapeCollection).map((shape, key) => {
-		const styleString: string = [shapeSelectorButtonBase, activeIndex === key ? shapeSelectorButtonActive : ""].join(" ");
+		const styleString: string = [
+			ShapeSelectorStyles.shapeSelectorButtonBase,
+			activeIndex === key ? ShapeSelectorStyles.shapeSelectorButtonActive : ""
+		].join(" ");
 
 		const onSelectedHandler = () => {
 			if (onSelected) onSelected(key);
@@ -44,7 +47,9 @@ const ShapeSelector = (props: ShapeSelectorProps) => {
 		);
 	});
 
-	return <nav className={shapeSelector}>{shapeSelectorButtons}</nav>;
+	const shapeSelectorClassName: string = [SidePanelStyles.sidePanel, SidePanelStyles.sidePanelLeft].join(" ");
+
+	return <nav className={shapeSelectorClassName}>{shapeSelectorButtons}</nav>;
 };
 
 export default ShapeSelector;

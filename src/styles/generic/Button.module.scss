@@ -1,6 +1,6 @@
-@use "./constants.scss";
+@use "../constants.scss";
 
-.genericButton {
+.button {
 	padding: 0.5rem 1rem;
 	border-radius: 100vh;
 	border: constants.$dimens-border-size solid transparent;
