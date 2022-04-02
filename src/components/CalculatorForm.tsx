@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import ShapeCollection from "../shapecollection";
 
 import CalculatorFormStyle from "../styles/CalculatorForm.module.scss";
-import GenericButtonStyles from "../styles/GenericButton.module.scss";
+import ButtonStyles from "../styles/generic/Button.module.scss";
 
 type OnSubmitCalculatorForm = {
 	(area: number): void;
@@ -23,9 +23,6 @@ const CalculatorForm = (props: CalculatorFormProps) => {
 
 	const { getCalculatorForm, calculateArea } = Object.values(ShapeCollection)[activeIndex];
 
-	const { calculatorForm } = CalculatorFormStyle,
-		{ genericButton } = GenericButtonStyles;
-
 	const onSubmitCalculatorFormHandler: FormEventHandler = (event: FormEvent) => {
 		event.preventDefault();
 
@@ -41,9 +38,9 @@ const CalculatorForm = (props: CalculatorFormProps) => {
 	};
 
 	return (
-		<form className={calculatorForm} ref={calculatorFormRef} onSubmit={onSubmitCalculatorFormHandler}>
+		<form className={CalculatorFormStyle.calculatorForm} ref={calculatorFormRef} onSubmit={onSubmitCalculatorFormHandler}>
 			{getCalculatorForm(t)}
-			<input type="submit" className={genericButton} value={String(t("calculatorForm:calculateButton"))} />
+			<input type="submit" className={ButtonStyles.button} value={String(t("calculatorForm:calculateButton"))} />
 		</form>
 	);
 };
