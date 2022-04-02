@@ -11,9 +11,4 @@ $color-secondary-text: hsl(0, 0%, 64%);
 $dimens-border-size: 1px;
 $dimens-outline-size: 2px;
 
-$shadows: (
-	top: 0px -2px 1px hsl(0, 0%, 0%, 20%),
-	bottom: 0px 2px 1px hsl(0, 0%, 0%, 20%),
-	left: -2px 0px 1px hsl(0, 0%, 0%, 20%),
-	right: 2px 0px 1px hsl(0, 0%, 0%, 20%)
-);
+$presets-border: 2px solid map-get($colors-background, "darker");

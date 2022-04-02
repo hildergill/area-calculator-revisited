@@ -1,3 +1,5 @@
+import SidePanelStyles from "../styles/generic/SidePanel.module.scss";
+
 type ResultsListProps = {
 	resultsBoxList: JSX.Element[];
 };
@@ -5,7 +7,9 @@ type ResultsListProps = {
 const ResultsList = (props: ResultsListProps) => {
 	const { resultsBoxList }: ResultsListProps = props;
 
-	return <output>{resultsBoxList}</output>;
+	const resultsListClassName: string = [SidePanelStyles.sidePanel, SidePanelStyles.sidePanelRight].join(" ");
+
+	return <output className={resultsListClassName}>{resultsBoxList}</output>;
 };
 
 export default ResultsList;
