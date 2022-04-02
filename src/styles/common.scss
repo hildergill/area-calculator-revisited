@@ -31,7 +31,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: constants.$dimens-mobile-treshold) {
 	#root {
 		grid-template-areas:
 			"shapeSelector"

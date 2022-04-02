@@ -14,3 +14,10 @@
 .sidePanelRight {
 	border-left: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
 }
+
+@media (max-width: constants.$dimens-mobile-treshold) {
+	.sidePanel {
+		flex-direction: row;
+		overflow-x: scroll;
+	}
+}

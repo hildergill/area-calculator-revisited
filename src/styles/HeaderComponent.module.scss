@@ -55,7 +55,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: constants.$dimens-mobile-treshold) {
 	.headerComponent {
 		display: none;
 	}
