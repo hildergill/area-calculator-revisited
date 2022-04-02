@@ -1,7 +1,0 @@
-@use "./constants.scss";
-
-.resultBox {
-	padding: 0.5rem;
-	border-bottom: constants.$presets-border;
-	background-color: map-get(constants.$colors-background, "base");
-}

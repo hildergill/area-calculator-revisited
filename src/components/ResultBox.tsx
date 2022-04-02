@@ -1,14 +1,16 @@
-import ResultBoxStyles from "../styles/ResultBox.module.scss";
+import ResultListStyles from "../styles/ResultList.module.scss";
 
 type ResultBoxProps = {
+	shapeName: string;
 	area: number;
 };
 
 const ResultBox = (props: ResultBoxProps) => {
-	const { area }: ResultBoxProps = props;
+	const { area, shapeName }: ResultBoxProps = props;
 
 	return (
-		<div className={ResultBoxStyles.resultBox}>
+		<div className={ResultListStyles.resultBox}>
+			<strong>{shapeName}</strong>
 			<p>{area}</p>
 		</div>
 	);

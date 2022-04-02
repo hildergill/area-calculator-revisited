@@ -17,8 +17,8 @@ const App = () => {
 		shapeSelectorRef.current?.focus();
 	};
 
-	const onSubmitCalculatorForm = (area: number) => {
-		const tempResultBox: JSX.Element = <ResultBox key={resultBoxList.length} area={area} />;
+	const onSubmitCalculatorForm = (area: number, shapeName: string) => {
+		const tempResultBox: JSX.Element = <ResultBox key={resultBoxList.length} shapeName={shapeName} area={area} />;
 
 		setResultBoxList([...resultBoxList, tempResultBox]);
 	};
