@@ -10,5 +10,25 @@
 		"inputs": {
 			"diameter": "Diameter"
 		}
+	},
+	"triangle": {
+		"name": "Triangle",
+		"inputs": {
+			"width": "Width",
+			"height": "Height"
+		}
+	},
+	"square": {
+		"name": "Square",
+		"inputs": {
+			"width": "Width"
+		}
+	},
+	"rectangle": {
+		"name": "Rectangle",
+		"inputs": {
+			"width": "Width",
+			"height": "Height"
+		}
 	}
 }
