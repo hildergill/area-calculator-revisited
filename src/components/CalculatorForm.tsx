@@ -21,7 +21,7 @@ const CalculatorForm = (props: CalculatorFormProps) => {
 
 	const { t } = useTranslation();
 
-	const { getCalculatorForm, calculateArea, getShapeName } = Object.values(ShapeCollection)[activeIndex];
+	const { getCalculatorForm, calculateArea, getShapeName, getFormula } = Object.values(ShapeCollection)[activeIndex];
 
 	const onSubmitCalculatorFormHandler: FormEventHandler = (event: FormEvent) => {
 		event.preventDefault();
@@ -39,6 +39,7 @@ const CalculatorForm = (props: CalculatorFormProps) => {
 
 	return (
 		<form className={CalculatorFormStyle.calculatorForm} ref={calculatorFormRef} onSubmit={onSubmitCalculatorFormHandler}>
+			<h2>{getFormula()}</h2>
 			{getCalculatorForm(t)}
 			<input type="submit" className={ButtonStyles.button} value={String(t("calculatorForm:calculateButton"))} />
 		</form>

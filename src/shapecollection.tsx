@@ -4,6 +4,7 @@ import NumberInput from "./components/NumberInput";
 type ShapeType<Params> = {
 	getShapeName(t: TFunction): string;
 	getCalculatorForm(t: TFunction): JSX.Element;
+	getFormula(): JSX.Element;
 	calculateArea(params: Params): number;
 };
 
@@ -16,6 +17,7 @@ const ShapeCollection: ShapeCollectionType = {
 	circleRadius: {
 		getShapeName: (t: TFunction) => t("shapes:circleRadius:name"),
 		calculateArea: ({ radius }) => 2 * Math.PI * radius,
+		getFormula: () => <>A = 2 &middot; &pi; &middot; r</>,
 		getCalculatorForm: (t: TFunction) => (
 			<>
 				<label htmlFor="radius">{t("shapes:circleRadius.inputs.radius")}</label>
@@ -26,6 +28,7 @@ const ShapeCollection: ShapeCollectionType = {
 	circleDiameter: {
 		getShapeName: (t: TFunction) => t("shapes:circleDiameter:name"),
 		calculateArea: ({ diameter }) => Math.PI * diameter,
+		getFormula: () => <>A = &pi; &middot; d</>,
 		getCalculatorForm: (t: TFunction) => (
 			<>
 				<label htmlFor="diameter">{t("shapes:circleDiameter.inputs.diameter")}</label>
