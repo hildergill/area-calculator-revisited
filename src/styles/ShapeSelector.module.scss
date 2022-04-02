@@ -28,3 +28,10 @@
 		color: constants.$color-primary-text;
 	}
 }
+
+@media (max-width: constants.$dimens-mobile-treshold) {
+	.shapeSelectorButtonBase {
+		border: none;
+		padding: 0.5rem 1rem;
+	}
+}
