@@ -4,8 +4,8 @@
 	padding: 0.5rem;
 	background: none;
 	border: none;
-	border-top: 2px solid transparent;
-	border-bottom: 2px solid transparent;
+	border-top: constants.$dimens-outline-size solid transparent;
+	border-bottom: constants.$dimens-outline-size solid transparent;
 	cursor: pointer;
 
 	&:first-child {
@@ -21,8 +21,8 @@
 
 .shapeSelectorButtonActive {
 	background-color: map-get(constants.$colors-background, "light");
-	border-top: 2px solid map-get(constants.$colors-background, "darker");
-	border-bottom: 2px solid map-get(constants.$colors-background, "darker");
+	border-top: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
+	border-bottom: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
 
 	p {
 		color: constants.$color-primary-text;

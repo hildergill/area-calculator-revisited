@@ -4,13 +4,13 @@
 	display: flex;
 	flex-direction: column;
 	background-color: map-get(constants.$colors-background, "dark");
-	border-top: constants.$presets-border;
+	border-top: constants.$dimens-outline-size solid map-get($colors-background, "darker");
 }
 
 .sidePanelLeft {
-	border-right: constants.$presets-border;
+	border-right: constants.$dimens-outline-size solid map-get($colors-background, "darker");
 }
 
 .sidePanelRight {
-	border-left: constants.$presets-border;
+	border-left: constants.$dimens-outline-size solid map-get($colors-background, "darker");
 }
