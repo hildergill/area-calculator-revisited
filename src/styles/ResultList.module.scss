@@ -1,0 +1,15 @@
+@use "./constants.scss";
+
+.resultList {
+	overflow-y: scroll;
+
+	.resultBox {
+		padding: 0.5rem;
+		border-bottom: constants.$presets-border;
+		border-right: constants.$presets-border;
+		background-color: map-get(constants.$colors-background, "base");
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+}

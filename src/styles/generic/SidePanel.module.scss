@@ -1,0 +1,16 @@
+@use "../constants.scss";
+
+.sidePanel {
+	display: flex;
+	flex-direction: column;
+	background-color: map-get(constants.$colors-background, "dark");
+	border-top: constants.$presets-border;
+}
+
+.sidePanelLeft {
+	border-right: constants.$presets-border;
+}
+
+.sidePanelRight {
+	border-left: constants.$presets-border;
+}
