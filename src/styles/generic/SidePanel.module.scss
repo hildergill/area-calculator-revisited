@@ -4,13 +4,21 @@
 	display: flex;
 	flex-direction: column;
 	background-color: map-get(constants.$colors-background, "dark");
-	border-top: constants.$presets-border;
+	border-top: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
 }
 
 .sidePanelLeft {
-	border-right: constants.$presets-border;
+	border-right: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
 }
 
 .sidePanelRight {
-	border-left: constants.$presets-border;
+	border-left: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
+}
+
+@media (max-width: constants.$dimens-mobile-treshold) {
+	.sidePanel {
+		flex-direction: row;
+		overflow-x: scroll;
+		border: none;
+	}
 }

@@ -5,11 +5,22 @@
 
 	.resultBox {
 		padding: 0.5rem;
-		border-bottom: constants.$presets-border;
-		border-right: constants.$presets-border;
+		border-bottom: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
+		border-right: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
 		background-color: map-get(constants.$colors-background, "base");
 		display: flex;
 		flex-direction: column;
 		gap: 0.2rem;
+	}
+}
+
+@media (max-width: constants.$dimens-mobile-treshold) {
+	.resultList {
+		overflow-x: scroll;
+
+		.resultBox {
+			border-top: constants.$dimens-outline-size solid map-get(constants.$colors-background, "darker");
+			border-bottom: none;
+		}
 	}
 }

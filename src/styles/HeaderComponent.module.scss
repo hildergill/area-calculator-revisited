@@ -54,3 +54,9 @@
 		}
 	}
 }
+
+@media (max-width: constants.$dimens-mobile-treshold) {
+	.headerComponent {
+		display: none;
+	}
+}
