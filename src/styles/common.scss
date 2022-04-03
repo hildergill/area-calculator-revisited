@@ -38,6 +38,6 @@
 			"calculatorForm"
 			"resultsList";
 		grid-template-columns: 100vw;
-		grid-template-rows: 4rem auto 6rem;
+		grid-template-rows: 4rem auto max-content;
 	}
 }
