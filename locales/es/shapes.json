@@ -1,0 +1,34 @@
+{
+	"circleRadius": {
+		"name": "Círculo (Radio)",
+		"inputs": {
+			"radius": "Radio"
+		}
+	},
+	"circleDiameter": {
+		"name": "Círculo (Diámetro)",
+		"inputs": {
+			"diameter": "Diámetro"
+		}
+	},
+	"triangle": {
+		"name": "Triángulo",
+		"inputs": {
+			"width": "Ancho",
+			"height": "Altura"
+		}
+	},
+	"square": {
+		"name": "Cuadrado",
+		"inputs": {
+			"width": "Ancho"
+		}
+	},
+	"rectangle": {
+		"name": "Rectángulo",
+		"inputs": {
+			"width": "Ancho",
+			"height": "Altura"
+		}
+	}
+}
