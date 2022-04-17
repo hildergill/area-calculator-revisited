@@ -1,3 +1,7 @@
+// This file is a part of area-calculator-revisited
+// https://www.github.com/hildergill/area-calculator-revisited
+// Copyright 2022 Hilder Gill
+
 import { createRef, RefObject, useState } from "react";
 import CalculatorForm from "./CalculatorForm";
 import HeaderComponent from "./HeaderComponent";

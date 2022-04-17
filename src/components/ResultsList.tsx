@@ -1,3 +1,7 @@
+// This file is a part of area-calculator-revisited
+// https://www.github.com/hildergill/area-calculator-revisited
+// Copyright 2022 Hilder Gill
+
 import SidePanelStyles from "../styles/generic/SidePanel.module.scss";
 import ResultListStyles from "../styles/ResultList.module.scss";
 

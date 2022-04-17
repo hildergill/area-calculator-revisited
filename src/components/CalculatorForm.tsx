@@ -1,3 +1,7 @@
+// This file is a part of area-calculator-revisited
+// https://www.github.com/hildergill/area-calculator-revisited
+// Copyright 2022 Hilder Gill
+
 import { createRef, FormEvent, FormEventHandler, RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import ShapeCollection from "../shapecollection";
