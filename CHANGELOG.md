@@ -3,6 +3,7 @@
 -   Added the following localizations:
     -   Hindi
     -   Bengali
+-   Added copyright banner to all files
 
 # Version 1.0.1
 
