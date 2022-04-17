@@ -22,6 +22,11 @@ import HeaderComponentEn from "../locales/en/headercomponent.json";
 import ShapesEn from "../locales/en/shapes.json";
 import CalculatorFormEn from "../locales/en/calculatorform.json";
 
+import CommonHi from "../locales/hi/common.json";
+import HeaderComponentHi from "../locales/hi/headercomponent.json";
+import ShapesHi from "../locales/hi/shapes.json";
+import CalculatorFormHi from "../locales/hi/calculatorform.json";
+
 export const resources: Resource = {
 	zh: {
 		common: CommonZh,
@@ -46,6 +51,12 @@ export const resources: Resource = {
 		headerComponent: HeaderComponentEn,
 		shapes: ShapesEn,
 		calculatorForm: CalculatorFormEn
+	},
+	hi: {
+		common: CommonHi,
+		headerComponent: HeaderComponentHi,
+		shapes: ShapesHi,
+		calculatorForm: CalculatorFormHi
 	}
 };
 
@@ -53,6 +64,6 @@ i18next
 	.use(initReactI18next)
 	.use(I18nextBrowserLanguageDetector)
 	.init({
-		supportedLngs: ["zh", "zh-CN", "es", "en"],
+		supportedLngs: ["zh", "zh-CN", "es", "en", "hi"],
 		resources
 	});
