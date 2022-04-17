@@ -1,3 +1,9 @@
+# Version 1.0.2
+
+-   Added the following localizations:
+    -   Hindi
+    -   Bengali
+
 # Version 1.0.1
 
 -   Updated dependencies
