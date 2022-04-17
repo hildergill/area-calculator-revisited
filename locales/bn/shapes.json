@@ -1,0 +1,34 @@
+{
+	"circleRadius": {
+		"name": "বৃত্ত (ব্যাসার্ধ)",
+		"inputs": {
+			"radius": "ব্যাসার্ধ"
+		}
+	},
+	"circleDiameter": {
+		"name": "বৃত্ত (ব্যাস)",
+		"inputs": {
+			"diameter": "ব্যাস"
+		}
+	},
+	"triangle": {
+		"name": "ত্রিভুজ",
+		"inputs": {
+			"width": "প্রস্থ",
+			"height": "উচ্চতা"
+		}
+	},
+	"square": {
+		"name": "বর্গক্ষেত্র",
+		"inputs": {
+			"width": "প্রস্থ"
+		}
+	},
+	"rectangle": {
+		"name": "আয়তক্ষেত্র",
+		"inputs": {
+			"width": "প্রস্থ",
+			"height": "উচ্চতা"
+		}
+	}
+}
