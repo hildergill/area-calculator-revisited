@@ -38,7 +38,6 @@ const HeaderComponent = (props: HeaderComponentProps) => {
 			</button>
 
 			<a tabIndex={0} className={repoLinkClassName} href={repository} target="_blank" title={t("headerComponent:visitGithubRepository")}>
-				<IconBrandGithub />
 				<p>{t("headerComponent:visitGithubRepository")}</p>
 			</a>
 		</header>
