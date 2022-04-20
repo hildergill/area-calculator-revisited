@@ -3,7 +3,6 @@
 // Copyright 2022 Hilder Gill
 
 import { useTranslation } from "react-i18next";
-import { IconBrandGithub } from "@tabler/icons";
 import { repository } from "../../package.json";
 
 import HeaderComponentStyles from "../styles/HeaderComponent.module.scss";

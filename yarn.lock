@@ -268,11 +268,6 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@tabler/icons@^1.60.0":
-  version "1.65.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.65.0.tgz#53d0ec68bceeb15fe038c186eed9478aa8f068bf"
-  integrity sha512-xax2W/vgjPDEh1/fN2hFuSiwC9a9eFxl3oD4XnGrYVHf177+LLj4+on7O2WCGXnHnsIftPsqARnvbga1dGpu0g==
-
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
