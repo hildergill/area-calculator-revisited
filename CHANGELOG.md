@@ -1,6 +1,6 @@
 # Version 1.0.2
 
-## Additions
+**Additions**
 
 -   Updated dependencies
 -   Added the following localizations:
@@ -8,7 +8,7 @@
     -   Bengali
 -   Added copyright banner to all files
 
-## Fixes
+**Fixes**
 
 -   Removed @tabler/icons from the dependencies list due to problems during build
 
