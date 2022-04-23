@@ -1,3 +1,9 @@
+# TBA
+
+-   Some code fixes
+-   Replaced `ReactDOM.render()` function to `ReactDOMClient.createRoot()`
+-   Overhauled localizations to make it simpler
+
 # Version 1.0.2
 
 **Additions**
