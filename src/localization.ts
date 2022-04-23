@@ -7,9 +7,11 @@ import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
 import en from "../locales/en.json";
+import es from "../locales/es.json";
 
 export const resources: Resource = {
-	en
+	en,
+	es
 } as const;
 
 i18next
@@ -17,6 +19,6 @@ i18next
 	.use(I18nextBrowserLanguageDetector)
 	.init({
 		resources,
-		supportedLngs: ["en"],
+		supportedLngs: ["en", "es"],
 		fallbackLng: "en"
 	});
