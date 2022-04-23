@@ -1,5 +1,7 @@
 {
-	"appName": "Area Calculator Revisited",
+	"common": {
+		"appName": "Area Calculator Revisited"
+	},
 	"headerComponent": {
 		"skipToShapeSelector": "Skip to shape selector",
 		"visitGithubRepository": "Visit GitHub Repository"

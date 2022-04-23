@@ -6,13 +6,22 @@ import i18next, { Resource } from "i18next";
 import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
-import en from "../locales/en/locales.json";
+import en from "../locales/en.json";
 
 export const resources: Resource = {
-	en
-};
+	en: {
+		default: en
+	}
+} as const;
+
+export const defaultNS: string = "common";
 
 i18next
 	.use(initReactI18next)
 	.use(I18nextBrowserLanguageDetector)
-	.init({ resources, supportedLngs: ["en"], fallbackLng: "en" });
+	.init({
+		resources,
+		defaultNS,
+		supportedLngs: ["en"],
+		fallbackLng: "en"
+	});
