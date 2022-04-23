@@ -9,19 +9,14 @@ import { initReactI18next } from "react-i18next";
 import en from "../locales/en.json";
 
 export const resources: Resource = {
-	en: {
-		default: en
-	}
+	en
 } as const;
-
-export const defaultNS: string = "common";
 
 i18next
 	.use(initReactI18next)
 	.use(I18nextBrowserLanguageDetector)
 	.init({
 		resources,
-		defaultNS,
 		supportedLngs: ["en"],
 		fallbackLng: "en"
 	});
