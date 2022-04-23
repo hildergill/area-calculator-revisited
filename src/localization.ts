@@ -10,12 +10,16 @@ import zh from "../locales/zh.json";
 import zhCn from "../locales/zh-cn.json";
 import es from "../locales/es.json";
 import en from "../locales/en.json";
+import hi from "../locales/hi.json";
+import bn from "../locales/bn.json";
 
 export const resources: Resource = {
 	en,
 	es,
 	zh,
-	"zh-CN": zhCn
+	"zh-CN": zhCn,
+	hi,
+	bn
 } as const;
 
 i18next
@@ -23,6 +27,6 @@ i18next
 	.use(I18nextBrowserLanguageDetector)
 	.init({
 		resources,
-		supportedLngs: ["zh", "zh-CN", "es", "en"],
+		supportedLngs: ["zh", "zh-CN", "es", "en", "hi", "bn"],
 		fallbackLng: "en"
 	});
