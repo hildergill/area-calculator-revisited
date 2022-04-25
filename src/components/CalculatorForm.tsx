@@ -42,7 +42,7 @@ const CalculatorForm = (props: CalculatorFormProps) => {
 	};
 
 	return (
-		<form className={CalculatorFormStyle.calculatorForm} ref={calculatorFormRef} onSubmit={onSubmitCalculatorFormHandler}>
+		<form className={CalculatorFormStyle.calculatorForm} ref={calculatorFormRef} onSubmit={onSubmitCalculatorFormHandler} title={t("titles:inputForm")}>
 			<h2>{getFormula()}</h2>
 			{getCalculatorForm(t)}
 			<input type="submit" className={ButtonStyles.button} value={String(t("calculatorForm:calculateButton"))} />

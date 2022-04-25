@@ -42,5 +42,11 @@
 				"height": "Altura"
 			}
 		}
+	},
+	"titles": {
+		"header": "Encabezado del sitio",
+		"shapeSelector": "Selector de forma",
+		"inputForm": "Formulario de entrada",
+		"resultsList": "Lista de resultados"
 	}
 }

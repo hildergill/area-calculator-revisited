@@ -53,7 +53,11 @@ const ShapeSelector = (props: ShapeSelectorProps) => {
 
 	const shapeSelectorClassName: string = [SidePanelStyles.sidePanel, SidePanelStyles.sidePanelLeft].join(" ");
 
-	return <nav className={shapeSelectorClassName}>{shapeSelectorButtons}</nav>;
+	return (
+		<nav className={shapeSelectorClassName} title={t("titles:shapeSelector")}>
+			{shapeSelectorButtons}
+		</nav>
+	);
 };
 
 export default ShapeSelector;
