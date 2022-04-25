@@ -3,6 +3,7 @@
 -   Some code fixes
 -   Replaced `ReactDOM.render()` function to `ReactDOMClient.createRoot()`
 -   Overhauled localizations to make it simpler
+-   Some accessibility additions
 
 # Version 1.0.2
 
