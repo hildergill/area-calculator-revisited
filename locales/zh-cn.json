@@ -42,11 +42,5 @@
 				"height": "高度"
 			}
 		}
-	},
-	"titles": {
-		"header": "网站标题",
-		"shapeSelector": "形状选择器",
-		"inputForm": "输入表格",
-		"resultsList": "结果列表"
 	}
 }

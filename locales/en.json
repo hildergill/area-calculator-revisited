@@ -42,11 +42,5 @@
 				"height": "Height"
 			}
 		}
-	},
-	"titles": {
-		"header": "Site header",
-		"shapeSelector": "Shape selector",
-		"inputForm": "Input form",
-		"resultsList": "Results list"
 	}
 }

@@ -42,11 +42,5 @@
 				"height": "ऊंचाई"
 			}
 		}
-	},
-	"titles": {
-		"header": "साइट हेडर",
-		"shapeSelector": "आकार चयनकर्ता",
-		"inputForm": "इनपुट फॉर्म",
-		"resultsList": "परिणाम सूची"
 	}
 }

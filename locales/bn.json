@@ -42,11 +42,5 @@
 				"height": "উচ্চতা"
 			}
 		}
-	},
-	"titles": {
-		"header": "সাইট হেডার",
-		"shapeSelector": "আকৃতি নির্বাচক",
-		"inputForm": "ইনপুট ফর্ম",
-		"resultsList": "ফলাফল তালিকা"
 	}
 }

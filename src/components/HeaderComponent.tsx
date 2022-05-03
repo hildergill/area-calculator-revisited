@@ -29,7 +29,7 @@ const HeaderComponent = (props: HeaderComponentProps) => {
 	};
 
 	return (
-		<header className={HeaderComponentStyles.headerComponent} role="banner" title={t("titles:header")}>
+		<header className={HeaderComponentStyles.headerComponent} role="banner">
 			<h1>{t("common:appName")}</h1>
 
 			<button className={skipButton} tabIndex={0} onClick={onSkipHandler}>
