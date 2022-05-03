@@ -1,6 +1,7 @@
-# TBA
+# Version 1.1.1
 
 -   Removed the section titles
+-   Updated dependencies
 
 # Version 1.1.0
 
