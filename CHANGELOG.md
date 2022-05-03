@@ -1,3 +1,7 @@
+# TBA
+
+-   Removed the section titles
+
 # Version 1.1.0
 
 -   Some code fixes
