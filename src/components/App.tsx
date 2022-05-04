@@ -6,7 +6,7 @@ import { createRef, RefObject, useState } from "react";
 import CalculatorForm from "./calculatorform/CalculatorForm";
 import HeaderComponent from "./headercomponent/HeaderComponent";
 import ResultBox from "./resultbox/ResultBox";
-import ResultsList from "./resultlist/ResultsList";
+import ResultsList from "./resultslist/ResultsList";
 import ShapeSelector from "./shapeselector/ShapeSelector";
 
 const App = () => {

@@ -4,10 +4,10 @@
 
 import { createRef, FormEvent, FormEventHandler, RefObject } from "react";
 import { useTranslation } from "react-i18next";
-import ShapeCollection from "../shapecollection";
+import ShapeCollection from "../../shapecollection";
 
-import CalculatorFormStyle from "../styles/CalculatorForm.module.scss";
-import ButtonStyles from "../styles/generic/Button.module.scss";
+import CalculatorFormStyle from "./CalculatorForm.module.scss";
+import ButtonStyles from "../../styles/Button.module.scss";
 
 type OnSubmitCalculatorForm = {
 	(area: number, shapeName: string): void;

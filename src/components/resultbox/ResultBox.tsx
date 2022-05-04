@@ -2,7 +2,7 @@
 // https://www.github.com/hildergill/area-calculator-revisited
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
-import ResultListStyles from "../styles/ResultList.module.scss";
+import ResultListStyles from "../resultslist/ResultList.module.scss";
 
 type ResultBoxProps = {
 	shapeName: string;

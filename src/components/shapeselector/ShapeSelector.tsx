@@ -6,8 +6,8 @@ import { RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import ShapeCollection from "../../shapecollection";
 
-import ShapeSelectorStyles from "../styles/ShapeSelector.module.scss";
-import SidePanelStyles from "../styles/generic/SidePanel.module.scss";
+import ShapeSelectorStyles from "./ShapeSelector.module.scss";
+import SidePanelStyles from "../../styles/SidePanel.module.scss";
 
 type OnSelectedShapeSelector = {
 	(index: number): void;

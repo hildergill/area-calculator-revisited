@@ -5,8 +5,8 @@
 import { useTranslation } from "react-i18next";
 import { repository } from "../../../package.json";
 
-import HeaderComponentStyles from "../styles/HeaderComponent.module.scss";
-import ButtonStyles from "../styles/generic/Button.module.scss";
+import HeaderComponentStyles from "./HeaderComponent.module.scss";
+import ButtonStyles from "../../styles/Button.module.scss";
 
 type OnSkipComponentProps = {
 	(): void;
