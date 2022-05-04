@@ -2,7 +2,7 @@
 // https://www.github.com/hildergill/area-calculator-revisited
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
-import NumberInputStyles from "../styles/NumberInput.module.scss";
+import NumberInputStyles from "./NumberInput.module.scss";
 
 type NumberInputProps = {
 	name: string;

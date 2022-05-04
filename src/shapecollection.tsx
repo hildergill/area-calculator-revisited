@@ -3,7 +3,7 @@
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
 import { TFunction } from "react-i18next";
-import NumberInput from "./components/NumberInput";
+import NumberInput from "./components/numberinput/NumberInput";
 
 type ShapeType<Params> = {
 	getShapeName(t: TFunction): string;
