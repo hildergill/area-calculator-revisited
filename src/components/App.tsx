@@ -3,7 +3,7 @@
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
 import { createRef, RefObject, useState } from "react";
-import CalculatorForm from "./CalculatorForm";
+import CalculatorForm from "./calculatorform/CalculatorForm";
 import HeaderComponent from "./headercomponent/HeaderComponent";
 import ResultBox from "./resultbox/ResultBox";
 import ResultsList from "./resultlist/ResultsList";
