@@ -1,3 +1,7 @@
+# Version 1.1.2
+
+-   Rearranged stylesheets
+
 # Version 1.1.1
 
 -   Removed the section titles
