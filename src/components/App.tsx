@@ -4,10 +4,10 @@
 
 import { createRef, RefObject, useState } from "react";
 import CalculatorForm from "./CalculatorForm";
-import HeaderComponent from "./HeaderComponent";
-import ResultBox from "./ResultBox";
-import ResultsList from "./ResultsList";
-import ShapeSelector from "./ShapeSelector";
+import HeaderComponent from "./headercomponent/HeaderComponent";
+import ResultBox from "./resultbox/ResultBox";
+import ResultsList from "./resultlist/ResultsList";
+import ShapeSelector from "./shapeselector/ShapeSelector";
 
 const App = () => {
 	const [activeShape, setActiveShape] = useState<number>(0);
