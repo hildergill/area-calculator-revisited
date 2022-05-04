@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import ShapeCollection from "../../shapecollection";
 
 import CalculatorFormStyle from "./CalculatorForm.module.scss";
-import ButtonStyles from "../../styles/Button.module.scss";
+import ButtonStyles from "../../styles/generic/Button.module.scss";
 
 type OnSubmitCalculatorForm = {
 	(area: number, shapeName: string): void;
