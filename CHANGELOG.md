@@ -1,3 +1,8 @@
+# Version 1.1.3
+
+-   Added the "base" configuration in the Vite config file for GitHub Pages deployment
+-   Fixed the type error on build
+
 # Version 1.1.2
 
 -   Rearranged stylesheets
