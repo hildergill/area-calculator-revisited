@@ -1,3 +1,8 @@
+# Version 1.1.4
+
+-	Fixed favicon not showing
+-	Updated dependencies
+
 # Version 1.1.3
 
 -   Added the "base" configuration in the Vite config file for GitHub Pages deployment
