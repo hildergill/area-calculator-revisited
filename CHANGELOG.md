@@ -1,6 +1,7 @@
 # Version 1.1.5
 
 -   Fixed semantic versioning
+-   Updated dependencies
 
 
 # Version 1.1.4
