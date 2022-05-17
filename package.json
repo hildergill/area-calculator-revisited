@@ -2,7 +2,7 @@
 	"name": "area-calculator-revisited",
 	"displayName": "Area Calculator Revisited",
 	"description": "A remake of Area Calculator built with Vite, React, and TypeScript!",
-	"version": "1.1.1",
+	"version": "1.1.5",
 	"author": {
 		"name": "Hilder Gill",
 		"email": "hildergill@gmail.com",

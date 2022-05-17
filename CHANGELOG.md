@@ -1,3 +1,8 @@
+# Version 1.1.5
+
+-   Fixed semantic versioning
+
+
 # Version 1.1.4
 
 -	Fixed favicon not showing
