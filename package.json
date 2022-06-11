@@ -1,7 +1,15 @@
 {
   "name": "area-calculator-revisited",
-  "version": "0.1.0",
-  "private": true,
+	"displayName": "Area Calculator Revisited",
+	"description": "A remake of Area Calculator built with React and TypeScript!",
+	"version": "1.1.5",
+	"author": {
+		"name": "Hilder Gill",
+		"email": "hildergill@gmail.com",
+		"url": "https://www.github.com/hildergill"
+	},
+	"repository": "https://www.github.com/hildergill/area-calculator-revisited",
+	"license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
