@@ -7,6 +7,14 @@
 }
 
 :root {
+	--color-background-shadow: hsl(0, 0%, 8%);
+
+	--color-background-secondary: hsl(220, 8%, 16%);
+	--color-background-primary: hsl(220, 8%, 24%);
+
+	--color-foreground-secondary: hsl(0, 0%, 88%);
+	--color-foreground-primary: hsl(0, 0%, 96%);
+
 	color-scheme: dark light;
 	font-family: "Roboto", sans-serif;
 }
