@@ -1,12 +1,11 @@
 import { FC } from "react";
+import { Header } from "../header/header";
 import AppStyles from "./app.module.css";
 
 export const App: FC = () => {
 	return (
 		<div className={AppStyles.app}>
-			{/* TODO Add something here later */}
-			{/* TODO Add something here later */}
-			{/* TODO Add something here later */}
+			<Header />
 		</div>
 	);
 };

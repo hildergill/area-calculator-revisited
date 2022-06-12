@@ -11,6 +11,7 @@
 	"repository": "https://www.github.com/hildergill/area-calculator-revisited",
 	"license": "MIT",
 	"dependencies": {
+		"@tabler/icons": "^1.68.0",
 		"@testing-library/jest-dom": "^5.14.1",
 		"@testing-library/react": "^13.0.0",
 		"@testing-library/user-event": "^13.2.1",
