@@ -1,0 +1,15 @@
+.commonButton {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	align-items: center;
+	padding: 0 1rem;
+	border-radius: 100vh;
+	background-color: var(--color-background-secondary);
+	color: var(--color-foreground-secondary);
+	text-decoration: none;
+}
+
+.commonButton:hover {
+	color: var(--color-foreground-primary);
+}
