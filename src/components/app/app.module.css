@@ -1,4 +1,9 @@
 .app {
+	--dimens-sizebar-width: 20rem;
+
 	height: 100vh;
 	background-color: var(--color-background-primary);
+	display: grid;
+	grid-template-columns: var(--dimens-sizebar-width) auto var(--dimens-sizebar-width);
+	grid-template-rows: max-content auto;
 }
