@@ -9,7 +9,7 @@ export const Header: FC = () => {
 		<header className={HeaderStyles.header}>
 			<h1>{Package.displayName}</h1>
 
-			<a target={"_blank"} href={Package.repository} className={CommonStyles.commonButton}>
+			<a target="_blank" rel="noreferrer" href={Package.repository} className={CommonStyles.commonButton}>
 				<IconBrandGithub />
 				<p>Visit GitHub Repository</p>
 			</a>
