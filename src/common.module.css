@@ -1,15 +1,37 @@
 .commonButton {
+	border: none;
 	display: flex;
 	flex-direction: row;
 	gap: 0.5rem;
 	align-items: center;
-	padding: 0 1rem;
+	padding: 0.5rem 1rem;
 	border-radius: 100vh;
 	background-color: var(--color-background-secondary);
 	color: var(--color-foreground-secondary);
 	text-decoration: none;
+	cursor: pointer;
+}
+
+.commonButton > * {
+	font-size: 1rem;
+}
+
+.commonButton > svg {
+	width: auto;
+	height: 1.5rem;
 }
 
 .commonButton:hover {
+	color: var(--color-foreground-primary);
+}
+
+.commonInput {
+	border: none;
+	color: var(--color-foreground-secondary);
+	background-color: var(--color-background-secondary);
+}
+
+.commonInput:focus,
+.commonInput:active {
 	color: var(--color-foreground-primary);
 }
