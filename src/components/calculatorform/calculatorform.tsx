@@ -11,16 +11,14 @@ export type CalculatorFormProps = {
 export const CalculatorForm: FC<CalculatorFormProps> = (props: CalculatorFormProps) => {
 	const { activeShape }: CalculatorFormProps = props;
 
-	const { getName } = Object.values(Shapes)[activeShape];
+	const { getName, getCalculatorForm } = Object.values(Shapes)[activeShape];
 
 	return (
 		<main className={CalculatorFormStyles.calculatorForm}>
 			<h2>{getName()}</h2>
 
 			<form onSubmit={(event: FormEvent) => event.preventDefault()}>
-				{/* TODO Add something here later */}
-				{/* TODO Add something here later */}
-				{/* TODO Add something here later */}
+				{getCalculatorForm()}
 
 				<div className={CalculatorFormStyles.controlButtonContainer}>
 					<button type="reset" className={CommonStyles.commonButton}>
