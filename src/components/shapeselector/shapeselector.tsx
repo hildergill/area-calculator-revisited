@@ -12,7 +12,12 @@ export const ShapeSelector: FC<ShapeSelectorProps> = (props: ShapeSelectorProps)
 	const shapeArray = Object.values(Shapes);
 
 	const shapeButtons: JSX.Element[] = shapeArray.map((shape: Shape<any>, key: number) => {
-		return <button key={key}>{shape.getName()}</button>;
+		return (
+			<button key={key}>
+				{shape.getShapeIcon()}
+				<p>{shape.getName()}</p>
+			</button>
+		);
 	});
 
 	return <nav className={ShapeSelectorStyles.shapeSelector}>{shapeButtons}</nav>;

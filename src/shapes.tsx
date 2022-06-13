@@ -1,6 +1,9 @@
+import { IconCircle, IconTriangle, IconSquare, IconRectangle } from "@tabler/icons";
+
 export type Shape<T> = {
 	getName(): string;
 	resolveArea(params: T): number;
+	getShapeIcon(): JSX.Element;
 };
 
 export type CircleParams = { radius: number };
@@ -18,18 +21,22 @@ export type ShapeCollection = {
 export const Shapes: ShapeCollection = {
 	Circle: {
 		getName: () => "Circle",
-		resolveArea: ({ radius }: CircleParams) => Math.PI * radius
+		resolveArea: ({ radius }: CircleParams) => Math.PI * radius,
+		getShapeIcon: () => <IconCircle />
 	},
 	Triangle: {
 		getName: () => "Triangle",
-		resolveArea: ({ width, height }: TriangleParams) => 0.5 * width * height
+		resolveArea: ({ width, height }: TriangleParams) => 0.5 * width * height,
+		getShapeIcon: () => <IconTriangle />
 	},
 	Square: {
 		getName: () => "Square",
-		resolveArea: ({ width }: SquareParams) => Math.pow(width, 2)
+		resolveArea: ({ width }: SquareParams) => Math.pow(width, 2),
+		getShapeIcon: () => <IconSquare />
 	},
 	Rectangle: {
 		getName: () => "Rectangle",
-		resolveArea: ({ width, height }: RectangleParams) => width * height
+		resolveArea: ({ width, height }: RectangleParams) => width * height,
+		getShapeIcon: () => <IconRectangle />
 	}
 };

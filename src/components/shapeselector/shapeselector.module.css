@@ -4,3 +4,30 @@
 	display: flex;
 	flex-direction: column;
 }
+
+.shapeSelector > button {
+	padding: 0.5rem 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--color-foreground-secondary);
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.shapeSelector > button:hover {
+	color: var(--color-foreground-primary);
+}
+
+.shapeSelector > button > p {
+	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
+}
+
+.shapeSelector > button > svg {
+	width: auto;
+	height: 2rem;
+}
