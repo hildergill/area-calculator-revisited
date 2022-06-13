@@ -24,3 +24,14 @@
 .commonButton:hover {
 	color: var(--color-foreground-primary);
 }
+
+.commonInput {
+	border: none;
+	color: var(--color-foreground-secondary);
+	background-color: var(--color-background-secondary);
+}
+
+.commonInput:focus,
+.commonInput:active {
+	color: var(--color-foreground-primary);
+}

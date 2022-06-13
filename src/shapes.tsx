@@ -1,4 +1,5 @@
 import { IconCircle, IconTriangle, IconSquare, IconRectangle } from "@tabler/icons";
+import CommonStyles from "./common.module.css";
 
 export type Shape<T> = {
 	getName(): string;
@@ -27,7 +28,7 @@ export const Shapes: ShapeCollection = {
 		getCalculatorForm: () => (
 			<>
 				<label htmlFor="radius">Radius</label>
-				<input type="number" name="radius" id="radius" step={0.01} defaultValue={1} />
+				<input className={CommonStyles.commonInput} type="number" name="radius" id="radius" step={0.01} defaultValue={1} />
 			</>
 		)
 	},
@@ -38,9 +39,9 @@ export const Shapes: ShapeCollection = {
 		getCalculatorForm: () => (
 			<>
 				<label htmlFor="width">Width</label>
-				<input type="number" name="width" id="width" step={0.01} defaultValue={1} />
+				<input className={CommonStyles.commonInput} type="number" name="width" id="width" step={0.01} defaultValue={1} />
 				<label htmlFor="height">Height</label>
-				<input type="number" name="height" id="height" step={0.01} defaultValue={1} />
+				<input className={CommonStyles.commonInput} type="number" name="height" id="height" step={0.01} defaultValue={1} />
 			</>
 		)
 	},
@@ -51,7 +52,7 @@ export const Shapes: ShapeCollection = {
 		getCalculatorForm: () => (
 			<>
 				<label htmlFor="width">Width</label>
-				<input type="number" name="width" id="width" step={0.01} defaultValue={1} />
+				<input className={CommonStyles.commonInput} type="number" name="width" id="width" step={0.01} defaultValue={1} />
 			</>
 		)
 	},
@@ -62,9 +63,9 @@ export const Shapes: ShapeCollection = {
 		getCalculatorForm: () => (
 			<>
 				<label htmlFor="width">Width</label>
-				<input type="number" name="width" id="width" step={0.01} defaultValue={1} />
+				<input className={CommonStyles.commonInput} type="number" name="width" id="width" step={0.01} defaultValue={1} />
 				<label htmlFor="height">Height</label>
-				<input type="number" name="height" id="height" step={0.01} defaultValue={1} />
+				<input className={CommonStyles.commonInput} type="number" name="height" id="height" step={0.01} defaultValue={1} />
 			</>
 		)
 	}
