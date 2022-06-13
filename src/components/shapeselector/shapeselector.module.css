@@ -18,6 +18,7 @@
 }
 
 .shapeSelector > button.active {
+	color: var(--color-foreground-primary);
 	background-color: var(--color-background-secondary);
 }
 
@@ -26,7 +27,7 @@
 	cursor: pointer;
 }
 
-.shapeSelector > button:hover {
+.shapeSelector > button.inactive:hover {
 	color: var(--color-foreground-primary);
 }
 
