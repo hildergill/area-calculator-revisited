@@ -6,6 +6,8 @@
 }
 
 .shapeSelector > button {
+	--dimens-selected-indicator: 4px;
+
 	padding: 0.5rem 1rem;
 	display: flex;
 	flex-direction: row;
@@ -20,11 +22,13 @@
 .shapeSelector > button.active {
 	color: var(--color-foreground-primary);
 	background-color: var(--color-background-secondary);
+	border-left: var(--dimens-selected-indicator) solid var(--color-foreground-secondary);
 }
 
 .shapeSelector > button.inactive {
 	background-color: none;
 	cursor: pointer;
+	border-left: var(--dimens-selected-indicator) solid transparent;
 }
 
 .shapeSelector > button.inactive:hover {
