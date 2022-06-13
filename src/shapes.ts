@@ -1,21 +1,21 @@
-type Shape<T> = {
+export type Shape<T> = {
 	getName(): string;
 	resolveArea(params: T): number;
 };
 
-type CircleParams = { radius: number };
-type TriangleParams = { width: number; height: number };
-type SquareParams = { width: number };
-type RectangleParams = { width: number; height: number };
+export type CircleParams = { radius: number };
+export type TriangleParams = { width: number; height: number };
+export type SquareParams = { width: number };
+export type RectangleParams = { width: number; height: number };
 
-type ShapeCollection = {
+export type ShapeCollection = {
 	Circle: Shape<CircleParams>;
 	Triangle: Shape<TriangleParams>;
 	Square: Shape<SquareParams>;
 	Rectangle: Shape<RectangleParams>;
 };
 
-const Shapes: ShapeCollection = {
+export const Shapes: ShapeCollection = {
 	Circle: {
 		getName: () => "Circle",
 		resolveArea: ({ radius }: CircleParams) => Math.PI * radius
@@ -33,5 +33,3 @@ const Shapes: ShapeCollection = {
 		resolveArea: ({ width, height }: RectangleParams) => width * height
 	}
 };
-
-export default Shapes;
