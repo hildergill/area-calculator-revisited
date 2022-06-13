@@ -15,6 +15,14 @@
 	color: var(--color-foreground-secondary);
 	background: none;
 	border: none;
+}
+
+.shapeSelector > button.active {
+	background-color: var(--color-background-secondary);
+}
+
+.shapeSelector > button.inactive {
+	background-color: none;
 	cursor: pointer;
 }
 

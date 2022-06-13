@@ -12,8 +12,11 @@ export const ShapeSelector: FC<ShapeSelectorProps> = (props: ShapeSelectorProps)
 	const shapeArray = Object.values(Shapes);
 
 	const shapeButtons: JSX.Element[] = shapeArray.map((shape: Shape<any>, key: number) => {
+		const { active, inactive } = ShapeSelectorStyles,
+			className: string = key === activeShape ? active : inactive;
+
 		return (
-			<button key={key}>
+			<button className={className} key={key}>
 				{shape.getShapeIcon()}
 				<p>{shape.getName()}</p>
 			</button>
