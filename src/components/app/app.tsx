@@ -12,11 +12,15 @@ export const App: FC = () => {
 		setActiveShape(index);
 	};
 
+	const t = (e: number) => {
+		console.debug(e);
+	};
+
 	return (
 		<div className={AppStyles.app}>
 			<Header />
 			<ShapeSelector activeShape={activeShape} onSelectShapeButton={onSelectShapeSelector} />
-			<CalculatorForm activeShape={activeShape} />
+			<CalculatorForm activeShape={activeShape} onSubmit={t} />
 		</div>
 	);
 };
