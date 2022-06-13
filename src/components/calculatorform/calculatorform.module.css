@@ -5,9 +5,33 @@
 	padding-right: 1rem;
 }
 
+.calculatorForm > form {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: 8rem auto;
+	gap: 0.5rem;
+	grid-auto-rows: minmax(2rem, max-content);
+}
+
+.calculatorForm > form > * {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+}
+
+.calculatorForm > form > label {
+	grid-column: 1/2;
+	margin: auto 0;
+}
+
+.calculatorForm > form > input {
+	padding-left: 0.5rem;
+	grid-column: 2/3;
+}
+
 .calculatorForm > form > .controlButtonContainer {
 	display: flex;
 	flex-direction: row;
 	gap: 0.5rem;
 	justify-content: flex-end;
+	grid-column: 2/3;
 }
