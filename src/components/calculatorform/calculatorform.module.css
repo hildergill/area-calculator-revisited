@@ -37,6 +37,10 @@
 }
 
 @media (max-width: 800px) {
+	.calculatorForm {
+		flex: 1;
+	}
+
 	.calculatorForm > form {
 		display: flex;
 		flex-direction: column;

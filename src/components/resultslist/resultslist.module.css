@@ -15,3 +15,21 @@
 	gap: 0.5rem;
 	color: var(--color-foreground-primary);
 }
+
+@media (max-width: 800px) {
+	.resultsList {
+		flex-direction: row;
+		height: 8rem;
+	}
+
+	.resultsList > .resultsBox {
+		padding: 1rem 0.5rem;
+		width: 12rem;
+		flex-shrink: 0;
+		border-right: 1px solid var(--color-background-primary);
+	}
+
+	.resultsList > .resultsBox:last-child {
+		border-right: none;
+	}
+}
