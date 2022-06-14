@@ -41,6 +41,11 @@
 		flex: 1;
 	}
 
+	.calculatorForm > h2 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
 	.calculatorForm > form {
 		display: flex;
 		flex-direction: column;
