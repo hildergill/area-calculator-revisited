@@ -1,6 +1,7 @@
 import { IconCircle, IconTriangle, IconSquare, IconRectangle } from "@tabler/icons";
 import CommonStyles from "../common.module.css";
 import { CircleCalculatorForm } from "./calculator/circlecalculatorform";
+import { WidthHeightCalculatorForm } from "./calculator/widthheightcalculatorform";
 
 export type Shape<T> = {
 	getName(): string;
@@ -32,14 +33,7 @@ export const Shapes: ShapeCollection = {
 		getName: () => "Triangle",
 		resolveArea: ({ width, height }: TriangleParams) => 0.5 * width * height,
 		getShapeIcon: () => <IconTriangle />,
-		getCalculatorForm: () => (
-			<>
-				<label htmlFor="width">Width</label>
-				<input className={CommonStyles.commonInput} type="number" name="width" id="width" step={0.01} defaultValue={1} />
-				<label htmlFor="height">Height</label>
-				<input className={CommonStyles.commonInput} type="number" name="height" id="height" step={0.01} defaultValue={1} />
-			</>
-		)
+		getCalculatorForm: () => <WidthHeightCalculatorForm />
 	},
 	Square: {
 		getName: () => "Square",
@@ -56,13 +50,6 @@ export const Shapes: ShapeCollection = {
 		getName: () => "Rectangle",
 		resolveArea: ({ width, height }: RectangleParams) => width * height,
 		getShapeIcon: () => <IconRectangle />,
-		getCalculatorForm: () => (
-			<>
-				<label htmlFor="width">Width</label>
-				<input className={CommonStyles.commonInput} type="number" name="width" id="width" step={0.01} defaultValue={1} />
-				<label htmlFor="height">Height</label>
-				<input className={CommonStyles.commonInput} type="number" name="height" id="height" step={0.01} defaultValue={1} />
-			</>
-		)
+		getCalculatorForm: () => <WidthHeightCalculatorForm />
 	}
 };
