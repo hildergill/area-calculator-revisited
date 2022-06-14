@@ -5,6 +5,7 @@ import AppStyles from "./app.module.css";
 import { OnSelectShapeButton } from "../shapeselector/shapeselector";
 import { CalculatorForm, OnSubmitCalculatorForm } from "../calculatorform/calculatorform";
 import { ResultType, ResultsList } from "../resultslist/resultslist";
+import { Shapes } from "../../shapes";
 
 export const App: FC = () => {
 	const [activeShape, setActiveShape] = useState<number>(0);
@@ -14,9 +15,14 @@ export const App: FC = () => {
 		setActiveShape(index);
 	};
 
-	const onSubmitCalculatorForm: OnSubmitCalculatorForm = (area: number) => {
+	const onSubmitCalculatorForm: OnSubmitCalculatorForm = (params: any, results: number) => {
 		setResults((currentResultsList: ResultType[]) => {
-			return [...currentResultsList, { area }];
+			const resultsObject: ResultType = {
+				area: results,
+				paramsElements: Object.values(Shapes)[activeShape].getResultsParams(params)
+			};
+
+			return [...currentResultsList, resultsObject];
 		});
 	};
 

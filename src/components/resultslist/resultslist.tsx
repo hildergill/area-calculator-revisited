@@ -3,6 +3,7 @@ import ResultsListStyles from "./resultslist.module.css";
 
 export type ResultType = {
 	area: number;
+	paramsElements: JSX.Element;
 };
 
 export type ResultsListProps = {
@@ -15,6 +16,7 @@ export const ResultsList: FC<ResultsListProps> = (props: ResultsListProps) => {
 	const resultsBox: JSX.Element[] = results.map((results: ResultType, key: number) => {
 		return (
 			<div key={key}>
+				{results.paramsElements}
 				<strong>{results.area.toPrecision(5)}</strong>
 			</div>
 		);
