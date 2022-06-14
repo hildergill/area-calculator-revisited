@@ -1,5 +1,5 @@
 import { IconCircle, IconTriangle, IconSquare, IconRectangle } from "@tabler/icons";
-import CommonStyles from "./common.module.css";
+import CommonStyles from "../common.module.css";
 
 export type Shape<T> = {
 	getName(): string;
