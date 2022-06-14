@@ -4,6 +4,7 @@ import { ShapeSelector } from "../shapeselector/shapeselector";
 import AppStyles from "./app.module.css";
 import { OnSelectShapeButton } from "../shapeselector/shapeselector";
 import { CalculatorForm } from "../calculatorform/calculatorform";
+import { ResultsList } from "../resultslist/resultslist";
 
 export const App: FC = () => {
 	const [activeShape, setActiveShape] = useState<number>(0);
@@ -21,6 +22,7 @@ export const App: FC = () => {
 			<Header />
 			<ShapeSelector activeShape={activeShape} onSelectShapeButton={onSelectShapeSelector} />
 			<CalculatorForm activeShape={activeShape} onSubmit={t} />
+			<ResultsList />
 		</div>
 	);
 };
