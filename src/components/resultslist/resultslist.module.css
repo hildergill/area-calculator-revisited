@@ -1,6 +1,17 @@
 .resultsList {
+	display: flex;
+	flex-direction: column;
 	grid-column: 3/4;
 	grid-row: 2/3;
 	scrollbar-width: thin;
 	overflow-y: scroll;
+}
+
+.resultsList > .resultsBox {
+	background-color: var(--color-background-secondary);
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	color: var(--color-foreground-primary);
 }
