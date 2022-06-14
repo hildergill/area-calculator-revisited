@@ -1,10 +1,6 @@
-# This file is a part of area-calculator-revisited
-# https://www.github.com/hildergill/area-calculator-revisited
-# Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
-
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,react,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,react,node
+# Created by https://www.toptal.com/developers/gitignore/api/node,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,react
 
 ### Node ###
 # Logs
@@ -159,25 +155,5 @@ psd
 thumb
 sketch
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-
-# Local History for Visual Studio Code
-.history/
-
-# Built Visual Studio Code Extensions
-*.vsix
-
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
-
-# Support for Project snippet scope
-
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,react,node
+# Custome rules
+build/

@@ -1,13 +1,18 @@
+# Version 2.0.0
+
+-   Overhauled the user interface
+-   Migrated the codebase into React insetad of Vite
+-   Updated dependencies
+
 # Version 1.1.5
 
 -   Fixed semantic versioning
 -   Updated dependencies
 
-
 # Version 1.1.4
 
--	Fixed favicon not showing
--	Updated dependencies
+-   Fixed favicon not showing
+-   Updated dependencies
 
 # Version 1.1.3
 

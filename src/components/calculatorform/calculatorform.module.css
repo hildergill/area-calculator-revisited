@@ -1,0 +1,64 @@
+/*
+	This file is a part of area-calculator-revisited
+	https://www.github.com/hildergill/area-calculator-revisited
+	Copyright 2022 Hilder Gill <hildergill@gmail.com>
+*/
+
+.calculatorForm {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.calculatorForm > form {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: 8rem auto;
+	gap: 0.5rem;
+	grid-auto-rows: minmax(2rem, max-content);
+}
+
+.calculatorForm > form > * {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+}
+
+.calculatorForm > form > label {
+	grid-column: 1/2;
+	margin: auto 0;
+}
+
+.calculatorForm > form > input {
+	padding-left: 0.5rem;
+	grid-column: 2/3;
+}
+
+.calculatorForm > form > .controlButtonContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	justify-content: flex-end;
+	grid-column: 2/3;
+}
+
+@media (max-width: 800px) {
+	.calculatorForm {
+		flex: 1;
+	}
+
+	.calculatorForm > h2 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	.calculatorForm > form {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.calculatorForm > form > input {
+		height: 2rem;
+	}
+}
