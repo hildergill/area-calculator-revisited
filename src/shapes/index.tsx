@@ -1,3 +1,7 @@
+// This file is a part of area-calculator-revisited
+// https://www.github.com/hildergill/area-calculator-revisited
+// Copyright 2022 Hilder Gill <hildergill@gmail.com>
+
 import { IconCircle, IconTriangle, IconSquare, IconRectangle } from "@tabler/icons";
 import { CircleCalculatorForm } from "./calculatorforms/circlecalculatorform";
 import { SquareCalculatorForm } from "./calculatorforms/squarecalculatorform";
