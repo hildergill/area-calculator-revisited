@@ -1,0 +1,6 @@
+{
+	"inputs": {
+		"step": 0.01,
+		"defaultValue": 1
+	}
+}
