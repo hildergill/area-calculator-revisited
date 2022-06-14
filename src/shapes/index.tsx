@@ -1,7 +1,7 @@
 import { IconCircle, IconTriangle, IconSquare, IconRectangle } from "@tabler/icons";
-import CommonStyles from "../common.module.css";
-import { CircleCalculatorForm } from "./calculator/circlecalculatorform";
-import { WidthHeightCalculatorForm } from "./calculator/widthheightcalculatorform";
+import { CircleCalculatorForm } from "./calculatorforms/circlecalculatorform";
+import { SquareCalculatorForm } from "./calculatorforms/squarecalculatorform";
+import { WidthHeightCalculatorForm } from "./calculatorforms/widthheightcalculatorform";
 
 export type Shape<T> = {
 	getName(): string;
@@ -39,12 +39,7 @@ export const Shapes: ShapeCollection = {
 		getName: () => "Square",
 		resolveArea: ({ width }: SquareParams) => Math.pow(width, 2),
 		getShapeIcon: () => <IconSquare />,
-		getCalculatorForm: () => (
-			<>
-				<label htmlFor="width">Width</label>
-				<input className={CommonStyles.commonInput} type="number" name="width" id="width" step={0.01} defaultValue={1} />
-			</>
-		)
+		getCalculatorForm: () => <SquareCalculatorForm />
 	},
 	Rectangle: {
 		getName: () => "Rectangle",
