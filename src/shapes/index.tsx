@@ -3,6 +3,9 @@ import { CircleCalculatorForm } from "./calculatorforms/circlecalculatorform";
 import { SquareCalculatorForm } from "./calculatorforms/squarecalculatorform";
 import { WidthHeightCalculatorForm } from "./calculatorforms/widthheightcalculatorform";
 import { CircleResultsParams } from "./resultsparams/circleresultsparams";
+import { RectangleResultsParams } from "./resultsparams/rectangleresultsparams";
+import { SquareResultsParams } from "./resultsparams/squareresultsparams";
+import { TriangleResultsParams } from "./resultsparams/triangleresultsparams";
 
 export type Shape<T> = {
 	getName(): string;
@@ -37,20 +40,20 @@ export const Shapes: ShapeCollection = {
 		resolveArea: ({ width, height }: TriangleParams) => 0.5 * width * height,
 		getShapeIcon: () => <IconTriangle />,
 		getCalculatorForm: () => <WidthHeightCalculatorForm />,
-		getResultsParams: (params: TriangleParams) => <></>
+		getResultsParams: (params: TriangleParams) => <TriangleResultsParams {...params} />
 	},
 	Square: {
 		getName: () => "Square",
 		resolveArea: ({ width }: SquareParams) => Math.pow(width, 2),
 		getShapeIcon: () => <IconSquare />,
 		getCalculatorForm: () => <SquareCalculatorForm />,
-		getResultsParams: (params: SquareParams) => <></>
+		getResultsParams: (params: SquareParams) => <SquareResultsParams {...params} />
 	},
 	Rectangle: {
 		getName: () => "Rectangle",
 		resolveArea: ({ width, height }: RectangleParams) => width * height,
 		getShapeIcon: () => <IconRectangle />,
 		getCalculatorForm: () => <WidthHeightCalculatorForm />,
-		getResultsParams: (params: RectangleParams) => <></>
+		getResultsParams: (params: RectangleParams) => <RectangleResultsParams {...params} />
 	}
 };
