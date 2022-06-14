@@ -44,3 +44,25 @@
 	width: auto;
 	height: 2rem;
 }
+
+@media (max-width: 800px) {
+	.shapeSelector {
+		flex-direction: row;
+		justify-content: center;
+		gap: 0.2rem;
+	}
+
+	.shapeSelector > button,
+	.shapeSelector > button.active,
+	.shapeSelector > button.inactive {
+		border: none;
+	}
+
+	.shapeSelector > button.active {
+		border-radius: 100vh;
+	}
+
+	.shapeSelector > button > p {
+		display: none;
+	}
+}

@@ -7,3 +7,11 @@
 	grid-template-columns: var(--dimens-sizebar-width) auto var(--dimens-sizebar-width);
 	grid-template-rows: max-content auto;
 }
+
+@media (max-width: 800px) {
+	.app {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+	}
+}
