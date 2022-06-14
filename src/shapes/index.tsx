@@ -1,5 +1,6 @@
 import { IconCircle, IconTriangle, IconSquare, IconRectangle } from "@tabler/icons";
 import CommonStyles from "../common.module.css";
+import { CircleCalculatorForm } from "./calculator/circlecalculatorform";
 
 export type Shape<T> = {
 	getName(): string;
@@ -25,12 +26,7 @@ export const Shapes: ShapeCollection = {
 		getName: () => "Circle",
 		resolveArea: ({ radius }: CircleParams) => Math.PI * radius,
 		getShapeIcon: () => <IconCircle />,
-		getCalculatorForm: () => (
-			<>
-				<label htmlFor="radius">Radius</label>
-				<input className={CommonStyles.commonInput} type="number" name="radius" id="radius" step={0.01} defaultValue={1} />
-			</>
-		)
+		getCalculatorForm: () => <CircleCalculatorForm />
 	},
 	Triangle: {
 		getName: () => "Triangle",
