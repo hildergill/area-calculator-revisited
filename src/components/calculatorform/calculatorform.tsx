@@ -5,7 +5,7 @@ import CalculatorFormStyles from "./calculatorform.module.css";
 import CommonStyles from "../../common.module.css";
 
 export type OnSubmitCalculatorForm = {
-	(results: number): void;
+	(params: any, results: number): void;
 };
 
 export type CalculatorFormProps = {
@@ -28,7 +28,7 @@ export const CalculatorForm: FC<CalculatorFormProps> = (props: CalculatorFormPro
 		if (width) inputObject["width"] = width.value;
 		if (height) inputObject["height"] = height.value;
 
-		if (onSubmit) onSubmit(resolveArea(inputObject));
+		if (onSubmit) onSubmit(inputObject, resolveArea(inputObject));
 	};
 
 	return (
