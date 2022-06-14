@@ -1,7 +1,7 @@
 # Version 2.0.0
 
 -   Overhauled the user interface
--   Migrated the codebase into React insetad of Vite
+-   Migrated the codebase into React instead of Vite
 -   Updated dependencies
 
 # Version 1.1.5

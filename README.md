@@ -4,7 +4,7 @@
 
 <img src="./docs/screenshot_1.png" height="400" title="A screenshot of Area Calculator Revisited" />
 
-A remake of [Area Calculator](https://github.com/hildergill/area-calculator) built with React, and TypeScript!
+A remake of [Area Calculator](https://github.com/hildergill/area-calculator) built with React and TypeScript!
 
 ## Getting Started
 
