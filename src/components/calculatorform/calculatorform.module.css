@@ -35,3 +35,15 @@
 	justify-content: flex-end;
 	grid-column: 2/3;
 }
+
+@media (max-width: 800px) {
+	.calculatorForm > form {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.calculatorForm > form > input {
+		height: 2rem;
+	}
+}
