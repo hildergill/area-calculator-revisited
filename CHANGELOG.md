@@ -1,3 +1,7 @@
+# Version 2.0.1
+
+-   Moved the stylesheets into its own dedicated directory
+
 # Version 2.0.0
 
 -   Overhauled the user interface
