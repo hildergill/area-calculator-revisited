@@ -1,0 +1,38 @@
+/*
+	This file is a part of area-calculator-revisited
+	https://www.github.com/hildergill/area-calculator-revisited
+	Copyright 2022 Hilder Gill <hildergill@gmail.com>
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-background-shadow: hsl(0, 0%, 8%);
+
+	--color-background-secondary: hsl(220, 8%, 24%);
+	--color-background-primary: hsl(220, 8%, 16%);
+
+	--color-foreground-secondary: hsl(0, 0%, 80%);
+	--color-foreground-primary: hsl(0, 0%, 96%);
+
+	--dimens-mobile-treshold: 800px;
+
+	color-scheme: dark light;
+	font-family: "Roboto", sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-background-secondary: hsl(220, 8%, 88%);
+		--color-background-primary: hsl(220, 8%, 96%);
+
+		--color-foreground-secondary: hsl(0, 0%, 24%);
+		--color-foreground-primary: hsl(0, 0%, 8%);
+	}
+}
