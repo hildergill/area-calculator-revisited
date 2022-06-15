@@ -1,6 +1,7 @@
 # Version 2.0.1
 
 -   Moved the stylesheets into its own dedicated directory
+-   Removed the rounded corners in the common button style rules
 
 # Version 2.0.0
 
