@@ -3,8 +3,8 @@
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
 import { FC } from "react";
-import { Shapes, Shape } from "../../shapes";
-import ShapeSelectorStyles from "./shapeselector.module.css";
+import { Shapes, Shape } from "../shapes";
+import ShapeSelectorStyles from "../stylesheets/shapeselector.module.css";
 
 export type OnSelectShapeButton = {
 	(index: number): void;

@@ -3,10 +3,10 @@
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
 import { FC, FormEvent, FormEventHandler } from "react";
-import { Shapes } from "../../shapes";
+import { Shapes } from "../shapes";
 import { IconCheck, IconX } from "@tabler/icons";
 import CalculatorFormStyles from "./calculatorform.module.css";
-import CommonStyles from "../../common.module.css";
+import CommonStyles from "../stylesheets/common.module.css";
 
 export type OnSubmitCalculatorForm = {
 	(params: any, results: number): void;

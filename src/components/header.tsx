@@ -4,9 +4,9 @@
 
 import { FC } from "react";
 import { IconBrandGithub } from "@tabler/icons";
-import Package from "../../../package.json";
+import Package from "../../package.json";
 import HeaderStyles from "./header.module.css";
-import CommonStyles from "../../common.module.css";
+import CommonStyles from "../stylesheets/common.module.css";
 
 export const Header: FC = () => {
 	return (

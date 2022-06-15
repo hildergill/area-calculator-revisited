@@ -3,7 +3,7 @@
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
 import { FC } from "react";
-import ResultsListStyles from "./resultslist.module.css";
+import ResultsListStyles from "../stylesheets/resultslist.module.css";
 
 export type ResultType = {
 	area: number;
