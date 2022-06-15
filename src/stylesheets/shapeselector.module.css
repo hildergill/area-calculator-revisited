@@ -64,10 +64,6 @@
 		border: none;
 	}
 
-	.shapeSelector > button.active {
-		border-radius: 100vh;
-	}
-
 	.shapeSelector > button > p {
 		display: none;
 	}
