@@ -3,7 +3,7 @@
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
 import { FC } from "react";
-import CommonStyles from "../../common.module.css";
+import CommonStyles from "../../stylesheets/common.module.css";
 import Constants from "../../constants.json";
 
 export const WidthHeightCalculatorForm: FC = () => {

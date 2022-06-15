@@ -5,7 +5,7 @@
 import { FC, FormEvent, FormEventHandler } from "react";
 import { Shapes } from "../shapes";
 import { IconCheck, IconX } from "@tabler/icons";
-import CalculatorFormStyles from "./calculatorform.module.css";
+import CalculatorFormStyles from "../stylesheets/calculatorform.module.css";
 import CommonStyles from "../stylesheets/common.module.css";
 
 export type OnSubmitCalculatorForm = {

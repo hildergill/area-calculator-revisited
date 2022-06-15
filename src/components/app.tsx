@@ -5,7 +5,7 @@
 import { FC, useState } from "react";
 import { Header } from "./header";
 import { ShapeSelector } from "./shapeselector";
-import AppStyles from "./app.module.css";
+import AppStyles from "../stylesheets/app.module.css";
 import { OnSelectShapeButton } from "./shapeselector";
 import { CalculatorForm, OnSubmitCalculatorForm } from "./calculatorform";
 import { ResultType, ResultsList } from "./resultslist";
