@@ -1,3 +1,7 @@
+# Version 2.0.2
+
+-   Updated dependencies
+
 # Version 2.0.1
 
 -   Moved the stylesheets into its own dedicated directory
