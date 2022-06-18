@@ -5,11 +5,14 @@
 import { FC } from "react";
 import CommonStyles from "../../stylesheets/common.module.css";
 import Constants from "../../constants.json";
+import { useTranslation } from "react-i18next";
 
 export const SquareCalculatorForm: FC = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
-			<label htmlFor="width">Width</label>
+			<label htmlFor="width">{t("inputs:width")}</label>
 
 			<input
 				className={CommonStyles.commonInput}

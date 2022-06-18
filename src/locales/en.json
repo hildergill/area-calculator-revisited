@@ -4,5 +4,12 @@
 		"triangle": "Triangle",
 		"square": "Square",
 		"rectangle": "Rectangle"
+	},
+	"inputs": {
+		"radius": "Radius",
+		"width": "Width",
+		"height": "Height",
+		"submit": "Submit",
+		"reset": "Reset"
 	}
 }

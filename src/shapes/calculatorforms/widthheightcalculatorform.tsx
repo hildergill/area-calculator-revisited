@@ -5,11 +5,14 @@
 import { FC } from "react";
 import CommonStyles from "../../stylesheets/common.module.css";
 import Constants from "../../constants.json";
+import { useTranslation } from "react-i18next";
 
 export const WidthHeightCalculatorForm: FC = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
-			<label htmlFor="width">Width</label>
+			<label htmlFor="width">{t("inputs:width")}</label>
 
 			<input
 				className={CommonStyles.commonInput}
@@ -20,7 +23,7 @@ export const WidthHeightCalculatorForm: FC = () => {
 				defaultValue={Constants.inputs.defaultValue}
 			/>
 
-			<label htmlFor="height">Height</label>
+			<label htmlFor="height">{t("inputs:height")}</label>
 
 			<input
 				className={CommonStyles.commonInput}

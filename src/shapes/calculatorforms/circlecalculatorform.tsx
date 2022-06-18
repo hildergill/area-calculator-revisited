@@ -5,11 +5,14 @@
 import { FC } from "react";
 import CommonStyles from "../../stylesheets/common.module.css";
 import Constants from "../../constants.json";
+import { useTranslation } from "react-i18next";
 
 export const CircleCalculatorForm: FC = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
-			<label htmlFor="radius">Radius</label>
+			<label htmlFor="radius">{t("inputs:radius")}</label>
 
 			<input
 				className={CommonStyles.commonInput}
