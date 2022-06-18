@@ -2,6 +2,7 @@
 
 -   Fixed the favicon bug
 -   Updated dependencies
+-   Added localizations for English (`en`)
 
 # Version 2.0.1
 
