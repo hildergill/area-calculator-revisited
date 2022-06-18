@@ -1,4 +1,7 @@
 {
+	"header": {
+		"visitRepo": "Visit GitHub Repository"
+	},
 	"shapes": {
 		"circle": "Circle",
 		"triangle": "Triangle",

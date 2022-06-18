@@ -7,15 +7,18 @@ import { IconBrandGithub } from "@tabler/icons";
 import Package from "../../package.json";
 import HeaderStyles from "../stylesheets/header.module.css";
 import CommonStyles from "../stylesheets/common.module.css";
+import { useTranslation } from "react-i18next";
 
 export const Header: FC = () => {
+	const { t } = useTranslation();
+
 	return (
 		<header className={HeaderStyles.header}>
 			<h1>{Package.displayName}</h1>
 
 			<a target="_blank" rel="noreferrer" href={Package.repository} className={CommonStyles.commonButton}>
 				<IconBrandGithub />
-				<p>Visit GitHub Repository</p>
+				<p>{t("header:visitRepo")}</p>
 			</a>
 		</header>
 	);
