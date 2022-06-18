@@ -3,6 +3,7 @@
 // Copyright 2022 Hilder Gill <hildergill@gmail.com>
 
 import { IconCircle, IconTriangle, IconSquare, IconRectangle } from "@tabler/icons";
+import { TFunction } from "react-i18next";
 import { CircleCalculatorForm } from "./calculatorforms/circlecalculatorform";
 import { SquareCalculatorForm } from "./calculatorforms/squarecalculatorform";
 import { WidthHeightCalculatorForm } from "./calculatorforms/widthheightcalculatorform";
@@ -12,7 +13,7 @@ import { SquareResultsParams } from "./resultsparams/squareresultsparams";
 import { TriangleResultsParams } from "./resultsparams/triangleresultsparams";
 
 export type Shape<T> = {
-	getName(): string;
+	getName(t: TFunction): string;
 	resolveArea(params: T): number;
 	getShapeIcon(): JSX.Element;
 	getCalculatorForm(): JSX.Element;
@@ -33,28 +34,28 @@ export type ShapeCollection = {
 
 export const Shapes: ShapeCollection = {
 	Circle: {
-		getName: () => "Circle",
+		getName: (t: TFunction) => t("shapes:circle"),
 		resolveArea: ({ radius }: CircleParams) => Math.PI * radius,
 		getShapeIcon: () => <IconCircle />,
 		getCalculatorForm: () => <CircleCalculatorForm />,
 		getResultsParams: (params: CircleParams) => <CircleResultsParams {...params} />
 	},
 	Triangle: {
-		getName: () => "Triangle",
+		getName: (t: TFunction) => t("shapes:triangle"),
 		resolveArea: ({ width, height }: TriangleParams) => 0.5 * width * height,
 		getShapeIcon: () => <IconTriangle />,
 		getCalculatorForm: () => <WidthHeightCalculatorForm />,
 		getResultsParams: (params: TriangleParams) => <TriangleResultsParams {...params} />
 	},
 	Square: {
-		getName: () => "Square",
+		getName: (t: TFunction) => t("shapes:square"),
 		resolveArea: ({ width }: SquareParams) => Math.pow(width, 2),
 		getShapeIcon: () => <IconSquare />,
 		getCalculatorForm: () => <SquareCalculatorForm />,
 		getResultsParams: (params: SquareParams) => <SquareResultsParams {...params} />
 	},
 	Rectangle: {
-		getName: () => "Rectangle",
+		getName: (t: TFunction) => t("shapes:rectangle"),
 		resolveArea: ({ width, height }: RectangleParams) => width * height,
 		getShapeIcon: () => <IconRectangle />,
 		getCalculatorForm: () => <WidthHeightCalculatorForm />,

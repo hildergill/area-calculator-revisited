@@ -7,6 +7,7 @@ import { Shapes } from "../shapes";
 import { IconCheck, IconX } from "@tabler/icons";
 import CalculatorFormStyles from "../stylesheets/calculatorform.module.css";
 import CommonStyles from "../stylesheets/common.module.css";
+import { useTranslation } from "react-i18next";
 
 export type OnSubmitCalculatorForm = {
 	(params: any, results: number): void;
@@ -21,6 +22,8 @@ export const CalculatorForm: FC<CalculatorFormProps> = (props: CalculatorFormPro
 	const { activeShape, onSubmit }: CalculatorFormProps = props;
 
 	const { getName, getCalculatorForm, resolveArea } = Object.values(Shapes)[activeShape];
+
+	const { t } = useTranslation();
 
 	const onSubmitCalculatorForm: FormEventHandler = (event: FormEvent) => {
 		event.preventDefault();
@@ -37,7 +40,7 @@ export const CalculatorForm: FC<CalculatorFormProps> = (props: CalculatorFormPro
 
 	return (
 		<main className={CalculatorFormStyles.calculatorForm}>
-			<h2>{getName()}</h2>
+			<h2>{getName(t)}</h2>
 
 			<form onSubmit={onSubmitCalculatorForm}>
 				{getCalculatorForm()}
