@@ -5,6 +5,7 @@
 import { Root, createRoot } from "react-dom/client";
 import { App } from "./components/app";
 import "./stylesheets/global.css";
+import "./i18n";
 
 const root: Root = createRoot(document.getElementById("root")!);
 root.render(<App />);

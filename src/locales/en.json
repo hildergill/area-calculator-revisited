@@ -1,0 +1,8 @@
+{
+	"shapes": {
+		"circle": "Circle",
+		"triangle": "Triangle",
+		"square": "Square",
+		"rectangle": "Rectangle"
+	}
+}
