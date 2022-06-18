@@ -47,12 +47,12 @@ export const CalculatorForm: FC<CalculatorFormProps> = (props: CalculatorFormPro
 
 				<div className={CalculatorFormStyles.controlButtonContainer}>
 					<button type="reset" className={CommonStyles.commonButton}>
-						<p>Reset</p>
+						<p>{t("inputs:reset")}</p>
 						<IconX />
 					</button>
 
 					<button type="submit" className={CommonStyles.commonButton}>
-						<p>Submit</p>
+						<p>{t("inputs:submit")}</p>
 						<IconCheck />
 					</button>
 				</div>
