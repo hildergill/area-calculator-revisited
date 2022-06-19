@@ -17,7 +17,7 @@ export const Header: FC = () => {
 			<h1>{Package.displayName}</h1>
 
 			<a target="_blank" rel="noreferrer" href={Package.repository} className={CommonStyles.commonButton}>
-				<IconBrandGithub />
+				<IconBrandGithub role={"none"} />
 				<p>{t("header:visitRepo")}</p>
 			</a>
 		</header>
