@@ -16,7 +16,7 @@ export const Header: FC = () => {
 		<header className={HeaderStyles.header}>
 			<h1>{Package.displayName}</h1>
 
-			<a target={"_blank"} rel={"noreferrer"} href={Package.repository} className={CommonStyles.commonButton}>
+			<a tabIndex={0} target={"_blank"} rel={"noreferrer"} href={Package.repository} className={CommonStyles.commonButton}>
 				<IconBrandGithub role={"none"} />
 				<p>{t("header:visitRepo")}</p>
 			</a>
