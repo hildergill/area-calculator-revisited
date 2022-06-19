@@ -3,6 +3,7 @@
 -   Fixed the favicon bug
 -   Updated dependencies
 -   Added localizations for English (`en`)
+-   Some accessibility fixes
 
 # Version 2.0.1
 
