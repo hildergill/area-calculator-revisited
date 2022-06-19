@@ -19,12 +19,12 @@ export const ResultsList: FC<ResultsListProps> = (props: ResultsListProps) => {
 
 	const resultsBox: JSX.Element[] = results.map((results: ResultType, key: number) => {
 		return (
-			<div key={key} className={ResultsListStyles.resultsBox}>
+			<li key={key} className={ResultsListStyles.resultsBox}>
 				{results.paramsElements}
 				<strong>{results.area.toPrecision(5)}</strong>
-			</div>
+			</li>
 		);
 	});
 
-	return <output className={ResultsListStyles.resultsList}>{resultsBox}</output>;
+	return <ul className={ResultsListStyles.resultsList}>{resultsBox}</ul>;
 };
