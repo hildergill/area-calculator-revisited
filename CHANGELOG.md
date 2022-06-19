@@ -1,3 +1,7 @@
+# Version 2.0.3
+
+-   Fixed the favicon bug (again) 🗿
+
 # Version 2.0.2
 
 -   Fixed the favicon bug
