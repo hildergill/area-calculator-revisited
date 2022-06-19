@@ -32,7 +32,7 @@ export const ShapeSelector: FC<ShapeSelectorProps> = (props: ShapeSelectorProps)
 		};
 
 		return (
-			<button onClick={onButtonClickHandler} className={className} key={key}>
+			<button title={shape.getName(t)} onClick={onButtonClickHandler} className={className} key={key}>
 				{shape.getShapeIcon()}
 				<p>{shape.getName(t)}</p>
 			</button>
