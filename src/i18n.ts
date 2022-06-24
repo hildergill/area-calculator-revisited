@@ -5,17 +5,10 @@
 import i18next, { InitOptions } from "i18next";
 import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
-
-import en from "./locales/en.json";
-
-const resources = {
-	en
-} as const;
+import HttpBackend from "i18next-http-backend";
 
 const i18nInitOptions: InitOptions = {
-	supportedLngs: ["en"],
-	fallbackLng: "en",
-	resources
+	fallbackLng: "en"
 };
 
-i18next.use(initReactI18next).use(I18nextBrowserLanguageDetector).init(i18nInitOptions);
+i18next.use(initReactI18next).use(HttpBackend).use(I18nextBrowserLanguageDetector).init(i18nInitOptions);
