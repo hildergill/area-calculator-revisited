@@ -1,5 +1,6 @@
 # Version 2.0.4
 
+-   Switched to backend localizations
 -   Updated dependencies
 
 # Version 2.0.3
