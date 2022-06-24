@@ -34,28 +34,28 @@ export type ShapeCollection = {
 
 export const Shapes: ShapeCollection = {
 	Circle: {
-		getName: (t: TFunction) => t("shapes:circle"),
+		getName: (t: TFunction) => t("shapes.circle"),
 		resolveArea: ({ radius }: CircleParams) => Math.PI * radius,
 		getShapeIcon: () => <IconCircle role="none" />,
 		getCalculatorForm: () => <CircleCalculatorForm />,
 		getResultsParams: (params: CircleParams) => <CircleResultsParams {...params} />
 	},
 	Triangle: {
-		getName: (t: TFunction) => t("shapes:triangle"),
+		getName: (t: TFunction) => t("shapes.triangle"),
 		resolveArea: ({ width, height }: TriangleParams) => 0.5 * width * height,
 		getShapeIcon: () => <IconTriangle role="none" />,
 		getCalculatorForm: () => <WidthHeightCalculatorForm />,
 		getResultsParams: (params: TriangleParams) => <TriangleResultsParams {...params} />
 	},
 	Square: {
-		getName: (t: TFunction) => t("shapes:square"),
+		getName: (t: TFunction) => t("shapes.square"),
 		resolveArea: ({ width }: SquareParams) => Math.pow(width, 2),
 		getShapeIcon: () => <IconSquare role="none" />,
 		getCalculatorForm: () => <SquareCalculatorForm />,
 		getResultsParams: (params: SquareParams) => <SquareResultsParams {...params} />
 	},
 	Rectangle: {
-		getName: (t: TFunction) => t("shapes:rectangle"),
+		getName: (t: TFunction) => t("shapes.rectangle"),
 		resolveArea: ({ width, height }: RectangleParams) => width * height,
 		getShapeIcon: () => <IconRectangle role="none" />,
 		getCalculatorForm: () => <WidthHeightCalculatorForm />,
