@@ -8,7 +8,11 @@ import { initReactI18next } from "react-i18next";
 import HttpBackend from "i18next-http-backend";
 
 const i18nInitOptions: InitOptions = {
-	fallbackLng: "en"
+	fallbackLng: "en",
+	backend: {
+		allowMultiLoading: true,
+		loadPath: "area-calculator-revisited/locales/{{lng}}/{{ns}}.json"
+	}
 };
 
 i18next.use(initReactI18next).use(HttpBackend).use(I18nextBrowserLanguageDetector).init(i18nInitOptions);
