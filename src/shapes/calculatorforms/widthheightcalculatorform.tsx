@@ -12,7 +12,7 @@ export const WidthHeightCalculatorForm: FC = () => {
 
 	return (
 		<>
-			<label htmlFor="width">{t("inputs:width")}</label>
+			<label htmlFor="width">{t("inputs.width")}</label>
 
 			<input
 				className={CommonStyles.commonInput}
@@ -23,7 +23,7 @@ export const WidthHeightCalculatorForm: FC = () => {
 				defaultValue={Constants.inputs.defaultValue}
 			/>
 
-			<label htmlFor="height">{t("inputs:height")}</label>
+			<label htmlFor="height">{t("inputs.height")}</label>
 
 			<input
 				className={CommonStyles.commonInput}

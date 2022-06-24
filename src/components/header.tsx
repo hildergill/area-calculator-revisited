@@ -18,7 +18,7 @@ export const Header: FC = () => {
 
 			<a tabIndex={0} target={"_blank"} rel={"noreferrer"} href={Package.repository} className={CommonStyles.commonButton}>
 				<IconBrandGithub role={"none"} />
-				<p>{t("header:visitRepo")}</p>
+				<p>{t("header.visitRepo")}</p>
 			</a>
 		</header>
 	);

@@ -12,7 +12,7 @@ export const CircleCalculatorForm: FC = () => {
 
 	return (
 		<>
-			<label htmlFor="radius">{t("inputs:radius")}</label>
+			<label htmlFor="radius">{t("inputs.radius")}</label>
 
 			<input
 				className={CommonStyles.commonInput}

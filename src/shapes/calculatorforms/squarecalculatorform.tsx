@@ -12,7 +12,7 @@ export const SquareCalculatorForm: FC = () => {
 
 	return (
 		<>
-			<label htmlFor="width">{t("inputs:width")}</label>
+			<label htmlFor="width">{t("inputs.width")}</label>
 
 			<input
 				className={CommonStyles.commonInput}
