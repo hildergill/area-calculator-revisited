@@ -6,6 +6,12 @@ import { Root, createRoot } from "react-dom/client";
 import { App } from "./components/app";
 import "./stylesheets/global.css";
 import "./i18n";
+import { StrictMode } from "react";
 
 const root: Root = createRoot(document.getElementById("root")!);
-root.render(<App />);
+
+root.render(
+	<StrictMode>
+		<App />
+	</StrictMode>
+);
