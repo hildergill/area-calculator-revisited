@@ -1,3 +1,7 @@
+# Version 2.0.4
+
+-   Updated dependencies
+
 # Version 2.0.3
 
 -   Fixed the favicon bug (again) 🗿
