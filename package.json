@@ -2,7 +2,7 @@
 	"name": "area-calculator-revisited",
 	"displayName": "Area Calculator Revisited",
 	"description": "A remake of Area Calculator built with React and TypeScript!",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"homepage": "https://hildergill.github.io/area-calculator-revisited/",
 	"author": {
 		"name": "Hilder Gill",
