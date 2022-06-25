@@ -7,9 +7,9 @@
 	"author": {
 		"name": "Hilder Gill",
 		"email": "hildergill@gmail.com",
-		"url": "https://www.github.com/hildergill"
+		"url": "https://github.com/hildergill"
 	},
-	"repository": "https://www.github.com/hildergill/area-calculator-revisited",
+	"repository": "https://github.com/hildergill/area-calculator-revisited",
 	"license": "MIT",
 	"dependencies": {
 		"@tabler/icons": "^1.68.0",
